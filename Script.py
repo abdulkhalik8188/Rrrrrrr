@@ -194,18 +194,19 @@ Nᴀᴍᴇ - {}"""
 ╚═════•✧❅✦❅✧•═════╝</b>"""
 
     IMDB_TEMPLATE_TXT = """
-<b>🔖 ᴛɪᴛʟᴇ :<a href={url}>{title}</a>
+<i><b>📟 Movie Name</b></i> : <i><b><a href={url}>{title}</a></b></i>
 
-🎭 ɢᴇɴʀᴇs : {genres}
-🎖 ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10 (ʙᴀsᴇᴅ ᴏɴ {votes} ᴜsᴇʀ ʀᴀᴛɪɴɢ.)
+<i><b>📧 Votes</b></i> : <i><b>{votes}</b></i>
+<i><b>⏰ RunTime</b></i> : <i><b>{runtime} Minutes</b></i>
+<i><b>⭐ IMDB Rating</b></i> : <i><b><a href={url}/ratings>{rating}/10</a></b></i>
 
-📆 ʏᴇᴀʀ : {release_date}
-🗞 ʟᴀɴɢᴜᴀɢᴇ : {languages}
-🌎 ᴄᴏᴜɴᴛʀʏ : {countries}
+<i><b>🎞️ Genres</b></i> : <i><b>{genres}</b></i>
+<i><b>🎬 Director</b></i> : <i><b>{director}</b></i>
+<i><b>📝 Writer</b></i> : <i><b>{writer}</b></i>
+<i><b>🔊 Languages</b></i> : <i><b>#{languages}</b></i>
 
-📖 sᴛᴏʀʏ : {Plot}
-
-©{message.chat.title}</b>
+<i><b>👩🏻‍💻 Requested By</b></i> : <i><b>{message.from_user.mention}</b></i>
+<i><b>🚀 Group</b></i> : <i><b>{message.chat.title}</b></i>
 """
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
