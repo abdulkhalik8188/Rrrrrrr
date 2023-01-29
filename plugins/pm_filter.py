@@ -154,8 +154,8 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
+                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
                 ]
             )
                 
