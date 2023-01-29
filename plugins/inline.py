@@ -32,7 +32,7 @@ async def answer(bot, query):
                            switch_pm_parameter="hehe")
         return
 
-    if (AUTH_CHANNEL or REQ_CHANNEL) not await is_subscribed(bot, query):
+    if (AUTH_CHANNEL or REQ_CHANNEL) and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
                            switch_pm_text='You have to subscribe my channel to use the bot',
