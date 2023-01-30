@@ -189,8 +189,8 @@ Nᴀᴍᴇ - {}"""
     CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : <code>{file_name}</code>
 
 ╔═════•✧❅✦❅✧•═════╗
+▣ <a href=https://t.me/MovieGroup_TM>Mᴏᴠɪᴇ Gʀᴏᴜᴘ​</a>
 ▣ <a href=https://t.me/at3movies>​ᴍᴏᴠɪᴇs ꜰʟɪx​</a>
-▣ <a href=https://t.me/Cinema_Fast>​ᴄɪɴᴇᴍᴀ ғᴀꜱᴛ​</a>
 ╚═════•✧❅✦❅✧•═════╝</b>"""
 
     IMDB_TEMPLATE_TXT = """
