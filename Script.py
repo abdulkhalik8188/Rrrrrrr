@@ -190,7 +190,7 @@ Nᴀᴍᴇ - {}"""
 
 ╔═════•✧❅✦❅✧•═════╗
 ▣ <a href=https://t.me/at3movies>​ᴍᴏᴠɪᴇs ꜰʟɪx​</a>
-▣ <a href=https://t.me/MovieFlixGroupTG>​ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇs​ </a>
+▣ <a href=https://t.me/Cinema_Fast>​ᴄɪɴᴇᴍᴀ ғᴀꜱᴛ​</a>
 ╚═════•✧❅✦❅✧•═════╝</b>"""
 
     IMDB_TEMPLATE_TXT = """
