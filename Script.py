@@ -206,7 +206,7 @@ Nᴀᴍᴇ - {}"""
 <i><b>📝  Wʀɪᴛᴇʀꜱ</b></i> : <i><b>{writer}</b></i>
 <i><b>👩🏻‍💻 Requested By</b></i> : <i><b>{message.from_user.mention}</b></i>
 
-<i><b>©</b></i> : <i><b>{message.chat.title}</b></i>
+<i><b>©</b></i><i><b>{message.chat.title}</b></i>
 """
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
