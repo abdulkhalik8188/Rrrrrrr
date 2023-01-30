@@ -194,19 +194,19 @@ Nᴀᴍᴇ - {}"""
 ╚═════•✧❅✦❅✧•═════╝</b>"""
 
     IMDB_TEMPLATE_TXT = """
-<i><b>📟 Movie Name</b></i> : <i><b><a href={url}>{title}</a></b></i>
+<i><b>🔖 Tɪᴛʟᴇ</b></i> : <i><b><a href={url}>{title}</a></b></i>
+<i><b>🛸  Iɴғᴏ</b></i> : <i><b>{release_date}</b></i>
 
-<i><b>📧 Votes</b></i> : <i><b>{votes}</b></i>
-<i><b>⏰ RunTime</b></i> : <i><b>{runtime} Minutes</b></i>
-<i><b>⭐ IMDB Rating</b></i> : <i><b><a href={url}/ratings>{rating}/10</a></b></i>
+<i><b>🎭 Gᴇɴʀᴇ</b></i> : <i><b>{genres} Minutes</b></i>
+<i><b>🌟 Rᴀᴛɪɴɢ</b></i> : <i><b><a href={url}/ratings>{rating}/10</a></b></i>
+<i><b>🌍 Cᴏᴜɴᴛʀʏ</b></i> : <i><b>{countries}</b></i>
+<i><b>🎙 Lᴀɴɢᴜᴀɢᴇ</b></i> : <i><b>{languages}</b></i>
 
-<i><b>🎞️ Genres</b></i> : <i><b>{genres}</b></i>
-<i><b>🎬 Director</b></i> : <i><b>{director}</b></i>
-<i><b>📝 Writer</b></i> : <i><b>{writer}</b></i>
-<i><b>🔊 Languages</b></i> : <i><b>#{languages}</b></i>
-
+<i><b>🎬  Dɪʀᴇᴄᴛᴏʀ</b></i> : <i><b>{director}</b></i>
+<i><b>📝  Wʀɪᴛᴇʀꜱ</b></i> : <i><b>{writer}</b></i>
 <i><b>👩🏻‍💻 Requested By</b></i> : <i><b>{message.from_user.mention}</b></i>
-<i><b>🚀 Group</b></i> : <i><b>{message.chat.title}</b></i>
+
+<i><b>©</b></i> : <i><b>{message.chat.title}</b></i>
 """
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
