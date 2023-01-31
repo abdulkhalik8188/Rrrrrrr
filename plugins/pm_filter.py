@@ -1806,7 +1806,7 @@ async def advantage_spell_chok(client, msg):
             photo=SPELL_IMG, 
             caption=script.I_CUDNT.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button),
-            reply_to_message_id=message.id
+            reply_to_message_id=msg.id
         )
         await asyncio.sleep(30)
         await k.delete()
@@ -1823,7 +1823,7 @@ async def advantage_spell_chok(client, msg):
             photo=SPELL_IMG, 
             caption=script.I_CUDNT.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button),
-            reply_to_message_id=message.id
+            reply_to_message_id=msg.id
         )
         await asyncio.sleep(30)
         await k.delete()
@@ -1845,7 +1845,7 @@ async def advantage_spell_chok(client, msg):
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn),
-        reply_to_message_id=message.id
+        reply_to_message_id=msg.id
     )
     try:
         if settings['auto_delete']:
