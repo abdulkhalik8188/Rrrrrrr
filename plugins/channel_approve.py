@@ -18,10 +18,10 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 @bin.on_chat_join_request(filters.group | filters.channel)
 async def autoapprove(c, m):
     await c.approve_chat_join_request(m.chat.id, m.from_user.id)
-        button = [[
-            InlineKeyboardButton('🎬JOIN MOVIE CHANNEL🎬', url='https://t.me/at3moviesofficalbot')
-            ],[
-            InlineKeyboardButton('📽️JOIN MOVIE GROUP📽️', url='https://t.me/MovieGroup_TM')
+    button = [[
+        InlineKeyboardButton('🎬JOIN MOVIE CHANNEL🎬', url='https://t.me/at3moviesofficalbot')
+        ],[
+        InlineKeyboardButton('📽️JOIN MOVIE GROUP📽️', url='https://t.me/MovieGroup_TM')
         ]]
         markup = InlineKeyboardMarkup(button)
         caption = f'Hello {m.from_user.mention()}\nYou Request To Join {m.chat.title} Was Approved.'
