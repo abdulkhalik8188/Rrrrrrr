@@ -30,7 +30,7 @@ async def autoapprove(c, m):
         photo='https://telegra.ph/file/f7738f04ea74e16c9db02.jpg', 
         caption=caption, 
         reply_markup=markup
-        )
+    )
 
     except UserIsBlocked:
         print(f"{m.from_user.first_name} blocked the bot")
