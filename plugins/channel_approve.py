@@ -23,14 +23,15 @@ async def autoapprove(c, m):
         ],[
         InlineKeyboardButton('📽️JOIN MOVIE GROUP📽️', url='https://t.me/MovieGroup_TM')
         ]]
-        markup = InlineKeyboardMarkup(button)
-        caption = f'Hello {m.from_user.mention()}\nYou Request To Join {m.chat.title} Was Approved.'
-        await c.send_photo(
-            m.from_user.id, 
-            photo='https://telegra.ph/file/f7738f04ea74e16c9db02.jpg', 
-            caption=caption, 
-            reply_markup=markup
+    markup = InlineKeyboardMarkup(button)
+    caption = f'Hello {m.from_user.mention()}\nYou Request To Join {m.chat.title} Was Approved.'
+    await c.send_photo(
+        m.from_user.id, 
+        photo='https://telegra.ph/file/f7738f04ea74e16c9db02.jpg', 
+        caption=caption, 
+        reply_markup=markup
         )
+
     except UserIsBlocked:
         print(f"{m.from_user.first_name} blocked the bot")
     except PeerIdInvalid:
