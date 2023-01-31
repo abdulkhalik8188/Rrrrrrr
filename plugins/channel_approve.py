@@ -15,7 +15,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 
 #function
 
-@bin.on_chat_join_request(filters.group | filters.channel)
+@bin.on_chat_join_request(filters.command("approve") & filters.group | filters.channel)
 async def autoapprove(c, m):
     await c.approve_chat_join_request(m.chat.id, m.from_user.id)
     button = [[
