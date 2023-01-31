@@ -150,9 +150,9 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'🔰 ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
@@ -171,9 +171,9 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'🔰 ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
@@ -274,7 +274,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton(f' 𝄞  {search}  𝄞 ', 'qinfo')
+        InlineKeyboardButton(f'  {search}  ', 'qinfo')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -927,8 +927,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Mᴀsᴛᴇʀ Bᴏᴛ Lᴏɢs', url="https://t.me"),
         ],[
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url="https://t.me/at3movies"),
-            InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url="https://t.me/movieflixupdate")
+            InlineKeyboardButton('Gʀᴏᴜᴘ', url="https://t.me/CinemaKovilakam_Group"),
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url="https://t.me/CinemaKovilakam")
         ],[
             InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url="https://t.me/czdbotz"),
             InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url="https://t.me/czdbotz_support")
@@ -1598,9 +1598,9 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'🔰 ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
@@ -1619,9 +1619,9 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'🔰 ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
@@ -1634,7 +1634,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton(f' 𝄞  {search}  𝄞 ', 'qinfo')
+        InlineKeyboardButton(f'  {search}   ', 'qinfo')
     ])
 
     if offset != "":
