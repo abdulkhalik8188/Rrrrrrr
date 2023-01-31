@@ -31,11 +31,3 @@ async def autoapprove(c, m):
         caption=caption, 
         reply_markup=markup
     )
-"""
-        except UserIsBlocked:
-            print(f"{m.from_user.first_name} blocked the bot")
-        except PeerIdInvalid:
-            print(f"User {m.from_user.first_name} haven't started the bot yet")
-        except Exception as e:
-            print('Error:', e)
-"""
