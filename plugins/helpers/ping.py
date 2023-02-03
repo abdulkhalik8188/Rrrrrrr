@@ -14,7 +14,7 @@ ALIVES = "<b>ചത്തിട്ടില്ല മുത്തേ ഇവി�
 
 @Client.on_message(filters.command("alive", COMMAND_HAND_LER) & f_onw_fliter)
 async def check_alive(_, message):
-    await message.reply_text(ALIVE)
+    await message.reply_text(ALIVES)
 
 
 @Client.on_message(filters.command("ping", COMMAND_HAND_LER) & f_onw_fliter)
