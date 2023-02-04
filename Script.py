@@ -323,7 +323,7 @@ Do as you wish with telegra.ph module!
 Helps you to know your ping 🚶🏼‍♂️
 <b>Commands:</b>
 • /alive - To check you are alive.
-• /help - To get help.
+• /runs - To Some fun.
 • /ping - <b>To get your ping.</b>
 <b>🛠️Usage🛠️ :</b>
 • This commands can be used in pm and groups
