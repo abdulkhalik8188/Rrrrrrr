@@ -9,16 +9,18 @@ class script(object):
     HELPER_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>Hᴇʏ {}
-Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
-
-    ABOUT_TXT = """<b>🥱 My Name : {}
-🕵‍♂ Dᴇᴠᴏʟᴏᴘᴇʀ: <a href='https://t.me/AFxSU'>𝐂𝐫𝐚𝐳𝐲 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</a>
-📚 Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
-🖥 Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
-🎪 DᴀᴛᴀBᴀsᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
-📡 Sᴇʀᴠᴇʀ : <a href='https://t.me/quickfastt'>Qᴜɪᴄᴋ Fᴀsᴛ</a>
-🌟 Vᴇʀꜱɪᴏɴ : ᴠ 4.0 [ ʙᴇᴛᴀ ]</b>"""
+    ABOUT_TXT = """
+╔════❰ <b> ᴀʙᴏᴜᴛ​ </b> ❱═❍⊱❁۪۪
+║┏━━━━━━━━━━━━━━━➣
+║┣⪼<b>🤠 Mʏ Nᴀᴍᴇ : {} </b>
+║┣⪼<b>👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/AFxSU'>𝐂𝐫𝐚𝐳𝐲 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</a></b>
+║┣⪼<b>📚 Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a></b>
+║┣⪼<b>📝 Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a></b>
+║┣⪼<b>📦 Dᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a></b>
+║┣⪼<b>📡 Sᴇʀᴠᴇʀ : <a href='https://t.me/quickfastt'>Qᴜɪᴄᴋ Fᴀsᴛ</a></b>
+║┣⪼<b>🌟 Vᴇʀꜱɪᴏɴ : ᴠ 4.0 [ ʙᴇᴛᴀ ]</b>
+║┗━━━━━━━━━━━━━━━➣
+╚══════════════════❍⊱❁"""
 
     SOURCE_TXT = """<b>NOTE:
 ⚠️ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
