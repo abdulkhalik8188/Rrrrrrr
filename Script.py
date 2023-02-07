@@ -452,7 +452,7 @@ Commands and Usage:
 • /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.
 • /dkick - to kick deleted accounts."""
 
-    GROUP_TXT = """
+    GRP_TXT = """
 <b>𝐇𝐄𝐘 𝐁𝐑𝐔𝐇
 ╔════❰ ᴜᴘᴅᴀᴛᴇs​ ❱═❍⊱❁۪۪
 ║┏━━━━━━━━━━━━━━━➣
