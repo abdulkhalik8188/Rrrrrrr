@@ -891,16 +891,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⇄ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇄', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🧑‍🎓 ᴏᴡɴᴇʀ', callback_data="owner_info"),
-            InlineKeyboardButton('🌿 sᴜᴘᴘᴏʀᴛ​', callback_data="group_info")
+            InlineKeyboardButton('sᴇᴀʀᴄʜ​', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('♚ ᴏᴡɴᴇʀ ♚', callback_data='owner_info')
             ],[      
-            InlineKeyboardButton('💠 ʜᴇʟᴘ 💠', callback_data='help2'),
-            InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
+            InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help'),
+            InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
-            InlineKeyboardButton('🔒 ᴄʟᴏsᴇ ᴍᴇɴᴜ​ 🔒', callback_data='close_data')
-            ]]                 
+            InlineKeyboardButton('⌬ sᴜᴘᴘᴏʀᴛ ⌬', callback_data='support_group')
+        ]]                          
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -919,7 +919,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url="https://t.me/czdbotz"),
             InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url="https://t.me/czdbotz_support")
         ],[
-            InlineKeyboardButton('⇍ʙᴀᴄᴋ​', callback_data='start')
+            InlineKeyboardButton('⇍ʙᴀᴄᴋ​', callback_data='about')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -952,6 +952,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.GFILTER_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "support_group":
+        buttons = [[
+            InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GROUP_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
