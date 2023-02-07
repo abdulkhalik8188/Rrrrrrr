@@ -9,14 +9,16 @@ class script(object):
     HELPER_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='tg://settings'>Tʜɪs ᴘᴇʀsᴏɴ</a>
-✯ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
-✯ Dᴇᴠᴏʟᴏᴘᴇʀ: <a href='https://t.me/AFxSU'>𝐂𝐫𝐚𝐳𝐲 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</a>
-✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
-✯ DᴀᴛᴀBᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
-✯ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://t.me/quickfastt'>Qᴜɪᴄᴋ Fᴀsᴛ</a>
-✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.7.1 [ Sᴛᴀʙʟᴇ ]</b>"""
+    ABOUT_TXT = """<b>Hᴇʏ {}
+Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
+
+    ABOUT_TXT = """<b>🥱 My Name : {}
+🕵‍♂ Dᴇᴠᴏʟᴏᴘᴇʀ: <a href='https://t.me/AFxSU'>𝐂𝐫𝐚𝐳𝐲 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</a>
+📚 Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
+🖥 Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
+🎪 DᴀᴛᴀBᴀsᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
+📡 Sᴇʀᴠᴇʀ : <a href='https://t.me/quickfastt'>Qᴜɪᴄᴋ Fᴀsᴛ</a>
+🌟 Vᴇʀꜱɪᴏɴ : ᴠ 4.0 [ ʙᴇᴛᴀ ]</b>"""
 
     SOURCE_TXT = """<b>NOTE:
 ⚠️ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
@@ -101,19 +103,21 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /delallg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
 
-    STATUS_TXT = """<b>📂 ᴛᴏᴛᴀʟ ғɪʟᴇs: <code>{}</code>
-👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
-♻️ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
-🗃️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱
-🆓 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱</b>"""
+    STATUS_TXT =  """╔════❰ ꜱᴛᴀᴛᴜꜱ ❱═❍⊱❁۪۪
+║┏━━━━━━━━━━━━━━━➣
+║┣⪼<b>📂 Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code></b>
+║┣⪼<b>👤 Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code></b>
+║┣⪼<b>♻️ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code></b>
+║┣⪼<b>🗃️ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱</b>
+║┣⪼<b>🆓 Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱</b>
+║┗━━━━━━━━━━━━━━━➣
+╚══════════════════❍⊱❁"""
 
-    LOG_TEXT_G = """#NewUser
- <b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}(<code>{b}</code>)</b>
- <b>᚛› 𝐆 𝐈𝐃 ⪼ @{c}
- <b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ {d}</b>
- <b>᚛› 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ⪼ {e}</b>
- By {f}
- """
+    LOG_TEXT_G = """#NewGroup
+Group = {}(<code>{}</code>)
+Total Members = <code>{}</code>
+Added By - {}
+"""
 
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
@@ -447,3 +451,25 @@ Commands and Usage:
 • /inkick within_month long_time_ago - to kick users who are offline for more than 6-7 days.
 • /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.
 • /dkick - to kick deleted accounts."""
+
+    GROUP_TXT = """
+<b>𝐇𝐄𝐘 𝐁𝐑𝐔𝐇
+╔════❰ ᴜᴘᴅᴀᴛᴇs​ ❱═❍⊱❁۪۪
+║┏━━━━━━━━━━━━━━━➣
+║┣🎯✨ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄɪɴᴇᴍᴀ ᴋᴏᴠɪʟᴀᴋᴀᴍ❣
+║┣⚡️🍬ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇꜱ & ᴄʜᴀɴɴᴇʟꜱ 🦋✨
+║┗━━━━━━━━━━━━━━━➣
+║┏━━━━━━━━━━━━━━━➣
+║┣
+║┣🔰✥ <a href='https://t.me/CinemaKovilakam'>▷ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ◁</a>
+║┣
+║┣🔰✥ <a href='https://t.me/at3movies'>▷ ᴄɪɴᴇᴍᴀ ᴋᴏᴠɪʟᴀᴋᴀᴍ ɢʀᴏᴜᴘ 1 ◁</a>
+║┣
+║┣🔰✥ <a href='https://t.me/CinemaKovilakam_Group'>▷ ᴄɪɴᴇᴍᴀ ᴋᴏᴠɪʟᴀᴋᴀᴍ ɢʀᴏᴜᴘ 2 ◁</a>
+║┣
+║┣🔰✥ <a href='https://t.me/czdbotz'>▷ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ​ ◁</a>
+║┣
+║┣🦋 ᴍʏ ʙᴇsᴛ ғʀɪᴇɴᴅ :<a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ 🙌</a>
+║┣
+║┗━━━━━━━━━━━━━━━➣
+╚══════════════════❍⊱❁</b>"""
