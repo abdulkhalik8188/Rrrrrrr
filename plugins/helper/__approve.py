@@ -8,9 +8,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 
 
 
-##@Client.on_chat_join_request((filters.group | filters.channel) & filters.chat(CHAT_ID) if CHAT_ID else (filters.group | filters.channel))
-
-@Client.on_chat_join_request(filters.group | filters.channel)
+@Client.on_chat_join_request((filters.group | filters.channel) & filters.chat(CHAT_ID) if CHAT_ID else (filters.group | filters.channel))
 async def autoapprove(client, message: ChatJoinRequest):
     chat=message.chat 
     user=message.from_user 
@@ -22,7 +20,7 @@ async def autoapprove(client, message: ChatJoinRequest):
             
         ]]
         markup = InlineKeyboardMarkup(buttons)
-        caption = f'Hello {m.from_user.mention()}\nYou Request To Join {m.chat.title} Was Approved.'
+        caption = f'Hello {message.from_user.mention()}\nYou Request To Join {m.chat.title} Was Approved.'
         await client.send_photo(
             m.from_user.id, 
             photo='https://te.legra.ph/file/94d8bfbda46bcf2415346.jpg', 
