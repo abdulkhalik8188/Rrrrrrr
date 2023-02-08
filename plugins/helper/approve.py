@@ -1,7 +1,7 @@
 import os
 import asyncio
 from pyrogram import Client, filters
-from pyrogram.types import Message, User, ChatJoinRequest
+from pyrogram.types import Message, User, ChatJoinRequest, InlineKeyboardMarkup, InlineKeyboardButton
 from info import CHAT_ID, TEXT, APPROVED 
 
 
@@ -12,4 +12,12 @@ async def autoapprove(client, message: ChatJoinRequest):
     print(f"{user.first_name} Joined (Approved)") 
     await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
     if APPROVED == "on":
-        await client.send_message(chat_id=chat.id, text=TEXT.format(mention=user.mention, title=chat.title))
+        await client.send_message(chat_id=chat.id, 
+            text=TEXT.format(mention=user.mention, title=chat.title)
+            reply_markup=InlineKeyboardMarkup(
+                        [[
+                            InlineKeyboardButton('📌 Rᴇǫᴜᴇꜱᴛ Hᴇʀᴇ ', url ='https://t.me/at3movies')
+                        ]]
+              )
+            )
+             
