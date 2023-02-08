@@ -25,7 +25,7 @@ async def autoapprove(client, message: ChatJoinRequest):
     await client.send_message(
         text=TEXT.format(update.from_user.mention),
         disable_web_page_preview=True,
-        quote=True,
+        quote=False,
         reply_markup=BUTTONS
     ) 
 
