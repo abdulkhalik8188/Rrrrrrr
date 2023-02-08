@@ -22,10 +22,10 @@ async def autoapprove(client, message: ChatJoinRequest):
     print(f"{user.first_name} Joined (Approved)") 
     await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
     if APPROVED == "on":
-    await client.send_message(
+    await client.send_message(chat_id=chat.id,
         text=TEXT.format(update.from_user.mention),
         disable_web_page_preview=True,
-        quote=False,
+        quote=True,
         reply_markup=BUTTONS
     ) 
 
