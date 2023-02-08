@@ -16,7 +16,7 @@ async def autoapprove(client, message: ChatJoinRequest):
             text=TEXT.format(mention=user.mention, title=chat.title)
             reply_markup=InlineKeyboardMarkup(
                         [[
-                            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ​', url ='https://t.me/czdbotz_support')
+                            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ​', url='https://t.me/czdbotz_support')
                         ]]
               )
             )
