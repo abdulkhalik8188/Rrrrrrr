@@ -21,8 +21,9 @@ async def autoapprove(client, message: ChatJoinRequest):
         ]]
         markup = InlineKeyboardMarkup(buttons)
         caption = f"<b>Dᴇᴀʀ {message.from_user.mention()},\n\nYour Request To Jᴏɪɴ {message.chat.title} Was Approved 🔆</b>"
-        await client.reply_text(
+        await client.send_photo(
             message.from_user.id, 
-            text=caption, 
+            photo='', 
+            caption=caption, 
             reply_markup=markup
         )
