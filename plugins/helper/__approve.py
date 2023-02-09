@@ -20,7 +20,7 @@ async def autoapprove(client, message: ChatJoinRequest):
             
         ]]
         markup = InlineKeyboardMarkup(buttons)
-        caption = f"<b>Dᴇᴀʀ {mention}\n\nYour Request To Jᴏɪɴ {title}  Was Approved 🔆</b>"
+        caption = f"<b>Dᴇᴀʀ {message.from_user.mention()},\n\nYour Request To Jᴏɪɴ {message.chat.title} Was Approved 🔆</b>"
         await client.send_photo(
             message.from_user.id, 
             photo='https://te.legra.ph/file/94d8bfbda46bcf2415346.jpg', 
