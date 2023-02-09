@@ -9,7 +9,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 
 
 @Client.on_chat_join_request((filters.group | filters.channel) & filters.chat(CHAT_ID) if CHAT_ID else (filters.group | filters.channel))
-async def autoapprove(client, message: ChatJoinRequest):
+async def autoapprove(bot, update: ChatJoinRequest):
     chat=message.chat 
     user=message.from_user 
     print(f"{user.first_name} Joined") 
@@ -21,9 +21,9 @@ async def autoapprove(client, message: ChatJoinRequest):
         ]]
         markup = InlineKeyboardMarkup(buttons)
         msg = f'Hello {message.from_user.mention()}\nYou Request To Join {message.chat.title} Was Approved.'
-        await client.reply_message(
-            message.from_user.id,
-            message=msg, 
+        await update.reply_text(
+            disable_web_page_preview=True,
+            quote=True,
             reply_markup=markup
         )
          
