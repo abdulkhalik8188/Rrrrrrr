@@ -20,9 +20,10 @@ async def autoapprove(client, message: ChatJoinRequest):
             
         ]]
         markup = InlineKeyboardMarkup(buttons)
-        await client.send_text(
-            message.chat.id, 
-            text='welcome', 
+        await client.send_photo(
+            message.chat.id,  
+            photo='https://te.legra.ph/file/94d8bfbda46bcf2415346.jpg', 
+            caption=caption, 
             reply_markup=markup
         )
 
