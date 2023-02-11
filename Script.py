@@ -11,18 +11,14 @@ class script(object):
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """
-╔════❰ <b> ᴀʙᴏᴜᴛ​ </b> ❱═❍⊱❁۪۪
-║┏━━━━━━━━━━━━━━━➣
-║┣⪼<b>🤠 Mʏ Nᴀᴍᴇ : {} </b>
-║┣⪼<b>👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/AFxSU'>𝐂𝐫𝐚𝐳𝐲 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</a></b>
-║┣⪼<b>📚 Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a></b>
-║┣⪼<b>📝 Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a></b>
-║┣⪼<b>📦 Dᴀᴛᴀʙᴀꜱᴇ : <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a></b>
-║┣⪼<b>📡 Sᴇʀᴠᴇʀ : <a href='https://t.me/quickfastt'>Qᴜɪᴄᴋ Fᴀsᴛ</a></b>
-║┣⪼<b>🌟 Vᴇʀꜱɪᴏɴ : ᴠ 4.0 [ ʙᴇᴛᴀ ]</b>
-║┗━━━━━━━━━━━━━━━➣
-╚══════════════════❍⊱❁"""
-
+✯ 𝘔𝘺 𝘯𝘢𝘮𝘦 ⋟  {}
+✯ 𝘊𝘳𝘦𝘢𝘵𝘰𝘳 ⋟  <a href='https://t.me/AFxSU'>ᴄʀᴀᴢʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​</a></b>
+✯ 𝘓𝘪𝘣𝘳𝘢𝘳𝘺 ⋟  <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a></b>
+✯ 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 ⋟  <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏᴅʙ</a></b>
+✯ 𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦 ⋟  <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a></b>
+✯ 𝘉𝘰𝘵 𝘴𝘦𝘳𝘷𝘦𝘳 ⋟  <a href='https://t.me/quickfastt'>ǫᴜɪᴄᴋ ꜰᴀsᴛ</a></b>
+✯ 𝘉𝘶𝘪𝘭𝘥 𝘴𝘵𝘢𝘵𝘴 ⋟  ꜱᴛᴀʙʟᴇ
+"""
     SOURCE_TXT = """<b>NOTE:
 ⚠️ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
 ◆ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://t.me/CinemaKovilakam_Group>ʜᴇʀᴇ​</a>
