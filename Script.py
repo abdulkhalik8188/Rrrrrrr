@@ -145,8 +145,15 @@ Nᴀᴍᴇ - {}"""
 
     TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ..."""
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
+    MELCOW_ENG = """
+ʜᴇʏ {}, 
+ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ {}
 
+ʏᴏᴜ ᴄᴀɴ ꜰɪɴᴅ ᴍᴏᴠɪᴇꜱ / ꜱᴇʀɪᴇꜱ / ᴀɴɪᴍᴇꜱ ᴇᴛᴄ. ꜰʀᴏᴍ ʜᴇʀᴇ. ᴇɴᴊᴏʏ😉.
+
+┏≫ ғᴏʟʟᴏᴡ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+┣ ᴍʏ ᴏᴡɴᴇʀ ›› <a href=https://t.me/AFxSU>☆𝑪𝒓𝒂𝒛𝒚☆</a>
+┗≫ ғᴏʟʟᴏᴡ ɢʀᴏᴜᴘ ʀᴜʟᴇs"""
     OWNER_INFO = """
 <b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
@@ -192,12 +199,13 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : <code>{file_name}</code>
-
-╔═════•✧❅✦❅✧•═════╗
-▣ <a href=https://t.me/CinemaKovilakam_Group>Cɪɴᴇᴍᴀ Kᴏᴠɪʟᴀᴋᴀᴍ</a>
-▣ <a href=https://t.me/at3movies>​ᴍᴏᴠɪᴇs ꜰʟɪx​</a>
-╚═════•✧❅✦❅✧•═════╝</b>"""
+    CAPTION = """
+✯ Uploaded By @at3movies
+•────•────•────•
+Join ➪ @
+Join ➪ @at3movies
+•────•────•────•
+ᴊᴏɪɴ ★ ꜱʜᴀʀᴇ ★ ꜱᴜᴘᴘᴏʀᴛ"""
 
     IMDB_TEMPLATE_TXT = """
 <i><b>🔖 Tɪᴛʟᴇ</b></i> : <i><b><a href={url}>{title}</a></b></i>
