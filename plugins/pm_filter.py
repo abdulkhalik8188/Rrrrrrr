@@ -909,6 +909,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "qinfo":
         await query.answer(text=script.QINFO, show_alert=True)
 
+    elif query.data == "delf":
+        await query.answer(text=script.DELF, show_alert=True)
+
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
