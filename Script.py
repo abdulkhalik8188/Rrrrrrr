@@ -199,12 +199,14 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-✯ Uploaded By @at3movies
-•────•────•────•
-Join ➪ @
-Join ➪ @at3movies
-•────•────•────•
-ᴊᴏɪɴ ★ ꜱʜᴀʀᴇ ★ ꜱᴜᴘᴘᴏʀᴛ"""
+•───────────────────•
+📁 ➤ 𝒀𝒐𝒖𝒓 𝑭𝒊𝒍𝒆 𝑵𝒂𝒎𝒆 : {file_name}
+
+🧲 ➤ 𝒀𝒐𝒖𝒓 𝑭𝒊𝒍𝒆 𝑺𝒊𝒛𝒆 : {file_size}
+
+✮ 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 » @CinemaKovilakam_Group
+✮ 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 » @at3movies
+◈ ━━━━━━━━ ● ━━━━━━━ ◈"""
 
     IMDB_TEMPLATE_TXT = """
 <i><b>🔖 Tɪᴛʟᴇ</b></i> : <i><b><a href={url}>{title}</a></b></i>
