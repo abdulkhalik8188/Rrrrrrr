@@ -134,10 +134,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', url=GRP_LNK),
-                          InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=CHNL_LNK)
+                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data=close_data),
+                          InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
                        ],[
-                          InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url="t.me/AFxSU")
+                          InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
                          ]
                         ]
                     )
@@ -153,10 +153,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', url=GRP_LNK),
-                          InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=CHNL_LNK)
+                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data=close_data),
+                          InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
                        ],[
-                          InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url="t.me/cretz")
+                          InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
                          ]
                         ]
                     )
@@ -254,10 +254,10 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', url=GRP_LNK),
-                      InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=CHNL_LNK)
+                      InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data=close_data),
+                      InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
                    ],[
-                      InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url="t.me/crbeatz")
+                      InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
                      ]
                     ]
                 )
@@ -310,7 +310,7 @@ async def start(client, message):
               InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data=close_data),
               InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
            ],[
-              InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=OWN_LNK)
+              InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
              ]
             ]
         )
