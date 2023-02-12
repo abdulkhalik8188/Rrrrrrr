@@ -134,7 +134,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data=close_data),
+                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='close_data'),
                           InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
                        ],[
                           InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
@@ -153,7 +153,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data=close_data),
+                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='close_data'),
                           InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
                        ],[
                           InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
@@ -254,7 +254,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data=close_data),
+                      InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='close_data'),
                       InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
                    ],[
                       InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
@@ -307,7 +307,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data=close_data),
+              InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='close_data'),
               InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
            ],[
               InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
