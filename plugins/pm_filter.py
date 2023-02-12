@@ -150,9 +150,9 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'⊹ ɪɴꜰᴏ ⊹', 'reqinfo'),
+                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
+                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
                 ]
             )
 
@@ -171,9 +171,9 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'⊹ ɪɴꜰᴏ ⊹', 'reqinfo'),
+                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
+                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
                 ]
             )
 
@@ -204,7 +204,7 @@ async def next_page(bot, query):
                     [
                         InlineKeyboardButton("⌫ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"),
                         InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"),
-                        InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
+                        InlineKeyboardButton("𝐍𝐄𝐗𝐓 ⌦", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
         else:
@@ -937,6 +937,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
         await query.message.edit_text(
             text=script.GROUP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -1507,7 +1521,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='help2'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)       
+        reply_markup = InlineKeyboardMarkup(buttons)     
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )  
         total = await Media.count_documents()
         users = await db.total_users_count()
         chats = await db.total_chat_count()
@@ -1526,7 +1545,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='help2'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)       
+        reply_markup = InlineKeyboardMarkup(buttons)      
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        ) 
         total = await Media.count_documents()
         users = await db.total_users_count()
         chats = await db.total_chat_count()
@@ -1732,9 +1756,9 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'⊹ ɪɴꜰᴏ ⊹', 'reqinfo'),
+                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
+                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
                 ]
             )
 
@@ -1753,9 +1777,9 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'⊹ ɪɴꜰᴏ ⊹', 'reqinfo'),
+                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
+                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
                 ]
             )
 
