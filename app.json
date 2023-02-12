@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Joelkb/DQ-the-file-donor",
-    "repository": "https://github.com/CyberTG/Queen-autofilter",
+    "website": "https://github.com/CyberTG/master_personal",
+    "repository": "https://github.com/CyberTG/master_personal",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
