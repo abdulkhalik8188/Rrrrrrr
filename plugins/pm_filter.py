@@ -558,7 +558,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='close_data'),
+                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='delf'),
                           InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
                        ],[
                           InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
@@ -604,7 +604,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='close_data'),
+                  InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='delf'),
                   InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
                ],[
                   InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
