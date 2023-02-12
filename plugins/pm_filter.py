@@ -1131,13 +1131,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('sᴛᴀᴛᴜs​', callback_data='stats'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs​', callback_data='group_info'),
+            InlineKeyboardButton('sᴏᴜʀᴄᴇ​', callback_data='source')
+        ],[
             InlineKeyboardButton('ᴅɪsᴄʟᴀɪᴍᴇʀ​​', callback_data='disclaimer')
         ],[
             InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʙᴜɢs ᴀɴᴅ ꜰᴇᴇᴅʙᴀᴄᴋ​', url='https://t.me/czdbotz_support')
         ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ​', callback_data='start'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ​', callback_data='close_data')
+            InlineKeyboardButton('♙ Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1502,7 +1504,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='help2'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)       
@@ -1521,7 +1523,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='help2'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)       
