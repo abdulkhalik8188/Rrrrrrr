@@ -559,7 +559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         [
                          [
                           InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='delf'),
-                          InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
+                          InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ​​', url=OWN_LNK)
                        ],[
                           InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
                          ]
@@ -605,7 +605,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                  [
                   InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='delf'),
-                  InlineKeyboardButton('💞 ᴏᴡɴᴇʀ​', url=OWN_LNK)
+                  InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ​​', url=OWN_LNK)
                ],[
                   InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
                  ]
@@ -950,11 +950,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Mᴀsᴛᴇʀ Bᴏᴛ Lᴏɢs', url="https://t.me"),
         ],[
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url="https://t.me/CinemaKovilakam_Group"),
+            InlineKeyboardButton('Gʀᴏᴜᴘ', url="https://t.me/at3movies"),
             InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url="https://t.me/CinemaKovilakam")
         ],[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url="https://t.me/czdbotz"),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url="https://t.me/czdbotz_support")
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url="https://t.me/MLZ_BOTZ"),
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url="https://t.me/MLZ_BOTZ_SUPPORT")
         ],[
             InlineKeyboardButton('⇍ʙᴀᴄᴋ​', callback_data='about')
         ]]
@@ -1440,7 +1440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if query.from_user.id in ADMINS:
             await query.message.edit_text(text=script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
-            await query.answer("⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nIᴛꜱ ᴏɴʟʏ ғᴏʀ ᴍʏ ADMINS", show_alert=True)
+            await query.answer("⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nIᴛꜱ ᴏɴʟʏ ғᴏʀ ᴍʏ ADMINS\n\n©ᴍʟᴢ ʙᴏᴛᴢ", show_alert=True)
 
     elif query.data == "json":
         buttons = [[
@@ -1487,9 +1487,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "deploy":
         buttons = [[
            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/CrazyDeveloperTG/Doctor-Strange'),
-           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/AFxSU')
+           InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/czdbotz_support')
         ], [
-            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/MLZ_BOTZ')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1882,7 +1883,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"🎪 ᴛɪᴛɪʟᴇ {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ​</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/czdbotz'>ᴄᴢᴅʙᴏᴛᴢ​​</a>\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ🗑️\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
+        cap = f"🎪 ᴛɪᴛɪʟᴇ {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ​</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/MLZ_BOTZ'>ᴄᴢᴅʙᴏᴛᴢ​​</a>\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ🗑️\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
