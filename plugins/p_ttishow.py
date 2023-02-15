@@ -1,7 +1,7 @@
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
-from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_VID, CHNL_LNK, GRP_LNK
+from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_VID, CHNL_LNK, GRP_LNK, RUL_LNK
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
@@ -61,7 +61,9 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('❗️Rᴇᴀᴅ Gʀᴏᴜᴘ Rᴜʟᴇꜱ❗️', url="https://telegra.ph/%F0%9D%90%91%F0%9D%90%9A%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%9A-11-26")
+                                                                           InlineKeyboardButton('❗️Rᴇᴀᴅ Gʀᴏᴜᴘ Rᴜʟᴇꜱ❗️', url='https://t.me/MLZ_BOTZ')
+                                                                        ],[
+                                                                           InlineKeyboardButton('🔰 ɢʀᴏᴜᴘ ʀᴜʟᴇs​ 🔰 ', url=RUL_LNK)
                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
