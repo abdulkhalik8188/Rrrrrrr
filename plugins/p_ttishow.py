@@ -61,7 +61,7 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('❗️Rᴇᴀᴅ Gʀᴏᴜᴘ Rᴜʟᴇꜱ❗️', url='https://t.me/MLZ_BOTZ')
+                                                                           InlineKeyboardButton('🍁 sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ​ 🍁', url='https://t.me/MLZ_BOTZ')
                                                                         ],[
                                                                            InlineKeyboardButton('🔰 ɢʀᴏᴜᴘ ʀᴜʟᴇs​ 🔰 ', url=RUL_LNK)
                                                                         ]]
