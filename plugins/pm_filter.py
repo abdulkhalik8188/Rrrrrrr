@@ -1887,7 +1887,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = script.CAP_TXT.format(search, message.from_user.mention if message.from_user else message.chat.title)
+        cap = script.CAP_TXT.format(query, message.from_user.mention if message.from_user else message.chat.title)
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
