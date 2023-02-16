@@ -150,17 +150,20 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ɪɴꜰᴏ ⊹', 'reqinfo'),
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
-                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
+                    InlineKeyboardButton(f'⚜ ᴛɪᴘs​', 'tinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
-                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
+                    InlineKeyboardButton(f'⚜ ᴛɪᴘs​', 'tinfo')
                 ]
             )
                 
@@ -171,17 +174,20 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ɪɴꜰᴏ ⊹', 'reqinfo'),
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
-                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
+                    InlineKeyboardButton(f'⚜ ᴛɪᴘs​', 'tinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
-                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
+                    InlineKeyboardButton(f'⚜ ᴛɪᴘs​', 'tinfo')
                 ]
             )
     try:
@@ -1780,17 +1786,20 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ɪɴꜰᴏ ⊹', 'reqinfo'),
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
-                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
+                    InlineKeyboardButton(f'⚜ ᴛɪᴘs​', 'tinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
-                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
+                    InlineKeyboardButton(f'⚜ ᴛɪᴘs​', 'tinfo')
                 ]
             )
                 
@@ -1801,17 +1810,20 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ɪɴꜰᴏ ⊹', 'reqinfo'),
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
-                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
+                    InlineKeyboardButton(f'⚜ ᴛɪᴘs​', 'tinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'⊹ ᴍᴏᴠɪᴇ ⊹', 'minfo'),
-                    InlineKeyboardButton(f'⊹ ꜱᴇʀɪᴇꜱ ⊹', 'sinfo')
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo'),
+                    InlineKeyboardButton(f'⚜ ᴛɪᴘs​', 'tinfo')
                 ]
             )
 
@@ -1883,7 +1895,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"🎪 ᴛɪᴛɪʟᴇ {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ​</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/MLZ_BOTZ'>ᴄᴢᴅʙᴏᴛᴢ​​</a>\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ🗑️\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
+        cap = f"🎪 ᴛɪᴛɪʟᴇ:- {search}\n\n┏⁉️ ᴀsᴋᴇᴅ ʙʏ:- {message.from_user.mention}\n┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ</a>\n┗♻️ ᴄʜᴀɴɴᴇʟ : ​<a href='https://t.me/MLZ_BOTZ'>ᴄᴢᴅʙᴏᴛᴢ​​</a>\n\n⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
