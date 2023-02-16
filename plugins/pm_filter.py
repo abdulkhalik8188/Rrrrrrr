@@ -1116,9 +1116,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs​', callback_data='group_info'),
             InlineKeyboardButton('sᴏᴜʀᴄᴇ​', callback_data='source')
         ],[
-            InlineKeyboardButton('ᴅɪsᴄʟᴀɪᴍᴇʀ​​', callback_data='disclaimer')
-        ],[
-            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʙᴜɢs ᴀɴᴅ ꜰᴇᴇᴅʙᴀᴄᴋ​', url='https://t.me/czdbotz_support')
+            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʙᴜɢs ᴀɴᴅ ꜰᴇᴇᴅʙᴀᴄᴋ​', url='https://t.me/MLZ_BOTZ_SUPPORT')
         ],[
             InlineKeyboardButton('♙ Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
@@ -1416,16 +1414,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.PINGS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "disclaimer":
-        buttons = [[
-            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.DSLMR_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1776,7 +1764,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap =f"🎪 ᴛɪᴛɪʟᴇ:- {search}\n\n┏⁉️ ᴀsᴋᴇᴅ ʙʏ:- {message.from_user.mention}\n┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ</a>\n┗♻️ ᴄʜᴀɴɴᴇʟ : ​<a href='https://t.me/New_Movies_Fastly'>ᴀᴛ3 ꜰʟɪᴍ ꜰᴇsᴛ​</a>\n\n⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
+        cap =f"🎪 ᴛɪᴛɪʟᴇ:- {search}\n\n┏🕵️ ᴀsᴋᴇᴅ ʙʏ:- {message.from_user.mention}\n┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ</a>\n┗♻️ ᴄʜᴀɴɴᴇʟ : ​<a href='https://t.me/New_Movies_Fastly'>ᴀᴛ3 ꜰʟɪᴍ ꜰᴇsᴛ​</a>\n\n⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
