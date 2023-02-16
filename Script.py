@@ -20,7 +20,7 @@ class script(object):
 
 💞 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/TGxFOXY'>ꜰᴏxʏ ᴛɢ</a></b>"""
 
-    ABOUT_TXT = """
+    ABOUT_TXT = """<b>
 ‣ ᴍʏ ɴᴀᴍᴇ : <a href='https://t.me/at3moviesofficalbot'>ᴍᴀsᴛᴇʀ​​​</a>
 ‣ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ​</a>
 ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/TGxFOXY'>ꜰᴏxʏ ᴛɢ​​</a>
@@ -34,7 +34,7 @@ class script(object):
 ◆ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://t.me/MLZ_BOTZ_SUPPORT'>ᴍʟᴢ ʙᴏᴛᴢ​</a>
 
 ◆ ᴅᴇᴠs ​1 : <a href='https://t.me/Autofilter_vipBot'>ʟɪsᴀ</a>
-◆ ᴅᴇᴠs 2​ : <a href='https://t.me/MLZ_BOTZ'>ꜱᴘɪᴅᴇʀ</a></b>"""
+◆ ᴅᴇᴠs 2​ : <a href='https://t.me/crazyspiderr'>ꜱᴘɪᴅᴇʀ</a></b>"""
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
 <b>ɴᴏᴛᴇ:</b>
@@ -189,19 +189,12 @@ Nᴀᴍᴇ - {}
 ◈ ━━━━━━━━ ● ━━━━━━━ ◈"""
 
     IMDB_TEMPLATE_TXT = """
-<i><b>🔖 Tɪᴛʟᴇ</b></i> : <i><b><a href={url}>{title}</a></b></i>
-<i><b>🛸  Iɴғᴏ</b></i> : <i><b>{release_date}</b></i>
-
-<i><b>🎭 Gᴇɴʀᴇ</b></i> : <i><b>{genres} Minutes</b></i>
-<i><b>🌟 Rᴀᴛɪɴɢ</b></i> : <i><b><a href={url}/ratings>{rating}/10</a></b></i>
-<i><b>🌍 Cᴏᴜɴᴛʀʏ</b></i> : <i><b>{countries}</b></i>
-<i><b>🎙 Lᴀɴɢᴜᴀɢᴇ</b></i> : <i><b>{languages}</b></i>
-
-<i><b>🎬  Dɪʀᴇᴄᴛᴏʀ</b></i> : <i><b>{director}</b></i>
-<i><b>📝  Wʀɪᴛᴇʀꜱ</b></i> : <i><b>{writer}</b></i>
-<i><b>👩🏻‍💻 Requested By</b></i> : <i><b>{message.from_user.mention}</b></i>
-
-<i><b>©</b></i><i><b>{message.chat.title}</b></i>
+<b><a href={url}>{title}</a></b>
+⭐️<b><a href={url}/ratings>{rating}/10</a></b> | ⏰ <b>{runtime}</b>📆 <b>{release_date}</b>
+● <b>{genres}</b>
+● <b>{languages}</b>
+📖 sᴛᴏʀʏ : <b>{plot}</b> 
+©<b>{message.chat.title}</b>
 """
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
