@@ -1887,7 +1887,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"🎪 ᴛɪᴛɪʟᴇ:- {search}\n\n┏⁉️ ᴀsᴋᴇᴅ ʙʏ:- {message.from_user.mention}\n┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ</a>\n┗♻️ ᴄʜᴀɴɴᴇʟ : ​<a href='https://t.me/MLZ_BOTZ'>ᴄᴢᴅʙᴏᴛᴢ​​</a>\n\n⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
+        cap = script.CAP_TXT.format(search, message.from_user.mention if message.from_user else message.chat.title)
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
