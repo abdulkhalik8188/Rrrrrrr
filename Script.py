@@ -190,11 +190,15 @@ Nᴀᴍᴇ - {}
 
     IMDB_TEMPLATE_TXT = """
 <b><a href={url}>{title}</a></b>
+
 ⭐️<b><a href={url}/ratings>{rating}/10</a></b> | ⏰ <b>{runtime}</b>📆 <b>{release_date}</b>
+
 ● <b>{genres}</b>
 ● <b>{languages}</b>
+
 📖 sᴛᴏʀʏ : <b>{plot}</b> 
-©<b>{message.chat.title}</b>
+
+© <b>{message.chat.title}</b>
 """
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
