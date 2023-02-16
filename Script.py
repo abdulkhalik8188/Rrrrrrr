@@ -556,7 +556,7 @@ Commands and Usage:
 
 ©ᴍʟᴢ ʙᴏᴛᴢ"""
     CAP_TXT = """
-🎪 ᴛɪᴛɪʟᴇ:- {query}
+🎪 ᴛɪᴛɪʟᴇ:- {search}
 
 ┏⁉️ ᴀsᴋᴇᴅ ʙʏ:- {message.from_user.mention}
 ┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ</a>
