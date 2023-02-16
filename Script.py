@@ -555,13 +555,9 @@ Commands and Usage:
 ʙᴇᴄᴀᴜꜱᴇ ʙᴜᴛᴛᴏɴ ᴡᴇʀᴇ ʀᴇᴍᴏᴠᴇᴅ ʙʏ ᴀᴅᴍɪɴ
 
 ©ᴍʟᴢ ʙᴏᴛᴢ"""
-    CAP_TXT = """
-🎪 ᴛɪᴛɪʟᴇ:- {search}
-
-┏⁉️ ᴀsᴋᴇᴅ ʙʏ:- {message.from_user.mention}
-┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ</a>
-┗♻️ ᴄʜᴀɴɴᴇʟ:- <a href='https://t.me/New_Movies_Fastly'>ᴀᴛ3 ꜰʟɪᴍ ꜰᴇsᴛ​​​</a>
-
-⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️
-
-❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}"""
+    INFO = """
+HI"""
+    FORMAT = """
+HDHD """
+    TIPS = """
+HDHDH"""
