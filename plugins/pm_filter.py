@@ -228,7 +228,7 @@ async def next_page(bot, query):
                 btn.append(
                     [
                         InlineKeyboardButton("≪ ʙᴀᴄᴋ​", callback_data=f"next_{req}_{key}_{off_set}"),
-                        InlineKeyboardButton(f"{math.ceil(int(offset) / MAX_B_TN))+1} / {math.ceil(total / MAX_B_TN))}", callback_data="pages"),
+                        InlineKeyboardButton(f"{math.ceil(int(offset) / (MAX_B_TN))+1} / {math.ceil(total / MAX_B_TN))}", callback_data="pages"),
                         InlineKeyboardButton("ɴᴇxᴛ​ ≫", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
