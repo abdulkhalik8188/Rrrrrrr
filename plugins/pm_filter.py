@@ -318,14 +318,11 @@ async def advantage_spoll_choker(bot, query):
 
 #languages
 
-@Client.on_callback_query(filters.regex(r"^languages#"))
+@Client.on_callback_query(filters.regex(r"^languages"))
 async def languages_cb_handler(client: Client, query: CallbackQuery):
-
+   
     if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
-        return await query.answer(
-            f"⚠️ 𝗛𝗲𝘆, {query.from_user.first_name}.. \n\n𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿 𝗢𝘄𝗻𝗲𝗿 𝗙𝗶𝗹𝗲,\n\n⚠️𝗗𝗼𝗻'𝘁 𝗖𝗹𝗶𝗰𝗸 𝗢𝘁𝗵𝗲𝗿𝘀 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 😬",
-            show_alert=True,
-        )
+        return await query.answer(script.ALRT_TXT.format(query.from_user.first_name),show_alert=True)
     
     _, search, key = query.data.split("#")
 
@@ -343,15 +340,18 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
         0,
         [
             InlineKeyboardButton(
-                text="Select your languages", callback_data="ident"
+                text="👇🏻 sᴇʟᴇᴄᴛ ʏᴏᴜʀ ʟᴀɴɢᴜᴀɢᴇ 👇🏻", callback_data="laninfo"
             )
         ],
     )
     req = query.from_user.id
     offset = 0
-    btn.append([InlineKeyboardButton(text="Back to files", callback_data=f"next_{req}_{key}_{offset}")])
+    btn.append([InlineKeyboardButton(text="⪻ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs", callback_data=f"next_{req}_{key}_{offset}")])
 
-    await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
+    d = await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
+    await asyncio.sleep(600)
+    await message.delete()
+    await d.delete()
 
 
 @Client.on_callback_query(filters.regex(r"^fl#"))
@@ -361,23 +361,21 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     search = search.replace("_", " ")
     req = query.from_user.id
 
-    if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
-        return await query.answer(
-            f"⚠️ 𝗛𝗲𝘆, {query.from_user.first_name}.. \n\n𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿 𝗢𝘄𝗻𝗲𝗿 𝗙𝗶𝗹𝗲,\n\n⚠️𝗗𝗼𝗻'𝘁 𝗖𝗹𝗶𝗰𝗸 𝗢𝘁𝗵𝗲𝗿𝘀 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 😬",
-            show_alert=True,
-        )
+    if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
+        return await query.answer(script.ALRT_TXT.format(query.from_user.first_name),show_alert=True)
     
     files, _, _ = await get_search_results(search, max_results=10)
     files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
     if not files:
-        await query.answer("No files were found", show_alert=1)
+        await query.answer("☹️ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ 😢", show_alert=1)
         return
+    reqnxt = query.from_user.id if query.from_user else 0
     settings = await get_settings(query.message.chat.id)
     if settings["button"]:
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🐲 {get_size(file.file_size)}≽ {file.file_name}", callback_data=f'files#{reqnxt}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -386,10 +384,10 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"{file.file_name}", callback_data=f'files#{reqnxt}#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}]",
+                    text=f"🐲 {get_size(file.file_size)}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -399,13 +397,13 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     btn.insert(
         0,
         [
-            InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
         ],
     )
 
     btn.append(        [
             InlineKeyboardButton(
-                text="Back to files",
+                text="⪻ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs",
                 callback_data=f"next_{req}_{key}_{offset}"
                 ),
         ])
