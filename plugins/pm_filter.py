@@ -1755,13 +1755,10 @@ async def auto_filter(client, msg, spoll=False):
             ]
 
     try:
-        key = f"{message.chat.id}-{message.id}"
-        BUTTONS[key] = search
         if settings['auto_delete']:
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("Languages", callback_data=f"languages#{search}#{key}"),
                     InlineKeyboardButton(f'ꜰᴏʀᴍᴀᴛ​', 'format'),
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
