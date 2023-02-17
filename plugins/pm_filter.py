@@ -364,7 +364,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
         return await query.answer(script.ALRT_TXT.format(query.from_user.first_name),show_alert=True)
     
-    files, _, _ = await get_search_results(search, max_results=10)
+    files, _, _ = await get_search_results(search, max_results=MAX_BTN)
     files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
     if not files:
         await query.answer("☹️ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ 😢", show_alert=1)
