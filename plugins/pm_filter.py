@@ -455,6 +455,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 0,
                 [
                     InlineKeyboardButton('ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton('ꜱᴇʀɪᴇꜱ', 'sinfo'),
                 ],
             )
@@ -478,6 +479,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 0,
                 [
                     InlineKeyboardButton('ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton('ꜱᴇʀɪᴇꜱ', 'sinfo'),
                 ],
             )
