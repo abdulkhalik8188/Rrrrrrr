@@ -746,10 +746,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='delf'),
-                          InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ​​', url=OWN_LNK)
-                       ],[
-                          InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
+                          InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url="https://t.me/at3movies")
                          ]
                         ]
                     )
@@ -792,10 +789,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='delf'),
-                  InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ​​', url=OWN_LNK)
-               ],[
-                  InlineKeyboardButton("🔰 ᴊᴏɪɴ ꜰᴏʀ ᴍᴏᴠɪᴇs​ 🔰", url=MVG_LNK)
+                  InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ​', callback_data='delf')
                  ]
                 ]
             )
