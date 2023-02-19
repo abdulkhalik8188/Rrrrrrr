@@ -18,6 +18,8 @@ from pyrogram import types
 from Script import script 
 from datetime import date, datetime 
 import pytz
+from plugins import web_server
+from aiohttp import web
 
 class Bot(Client):
 
@@ -50,6 +52,9 @@ class Bot(Client):
         today = date.today()
         now = datetime.now(tz)
         time = now.strftime("%H:%M:%S %p")
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        await web.TCPSite(app, "0.0.0.0", "8080").start()
         await self.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
 
     async def stop(self, *args):
