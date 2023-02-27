@@ -1959,7 +1959,8 @@ async def auto_filter(client, msg, spoll=False):
                 hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(60)
+                        await asyncio.sleep(10)
+                        await hehe.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
                         await hehe.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await hehe.delete()
@@ -1969,7 +1970,8 @@ async def auto_filter(client, msg, spoll=False):
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(60)
+                        await asyncio.sleep(10)
+                        await hehe.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
                         await hehe.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await hehe.delete()
@@ -1990,7 +1992,8 @@ async def auto_filter(client, msg, spoll=False):
                 hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(60)
+                        await asyncio.sleep(10)
+                        await hmm.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
                         await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await hmm.delete()
@@ -2000,7 +2003,8 @@ async def auto_filter(client, msg, spoll=False):
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(60)
+                        await asyncio.sleep(10)
+                        await hmm.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
                         await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await hmm.delete()
@@ -2020,7 +2024,8 @@ async def auto_filter(client, msg, spoll=False):
                 fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(60)
+                        await asyncio.sleep(10)
+                        await fek.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
                         await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await fek.delete()
@@ -2030,7 +2035,8 @@ async def auto_filter(client, msg, spoll=False):
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(60)
+                        await asyncio.sleep(10)
+                        await fek.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
                         await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await fek.delete()
@@ -2049,7 +2055,8 @@ async def auto_filter(client, msg, spoll=False):
             fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
-                    await asyncio.sleep(60)
+                    await asyncio.sleep(10)
+                    await fuk.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
                     await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                     await asyncio.sleep(10)
                     await fuk.delete()
@@ -2059,7 +2066,8 @@ async def auto_filter(client, msg, spoll=False):
                 await save_group_settings(grpid, 'auto_delete', True)
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
-                    await asyncio.sleep(60)
+                    await asyncio.sleep(10)
+                    await fuk.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
                     await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                     await asyncio.sleep(10)
                     await fuk.delete()
