@@ -1960,9 +1960,6 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(10)
-                        await hehe.edit_image("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
-                        await hehe.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
-                        await asyncio.sleep(10)
                         await hehe.delete()
                         await message.delete()
                 except KeyError:
@@ -1970,9 +1967,6 @@ async def auto_filter(client, msg, spoll=False):
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(10)
-                        await hehe.edit_image("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
-                        await hehe.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await hehe.delete()
                         await message.delete()
@@ -1993,9 +1987,6 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(10)
-                        await hmm.edit_image("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
-                        await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
-                        await asyncio.sleep(10)
                         await hmm.delete()
                         await message.delete()
                 except KeyError:
@@ -2003,9 +1994,6 @@ async def auto_filter(client, msg, spoll=False):
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(10)
-                        await hmm.edit_photo("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
-                        await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await hmm.delete()
                         await message.delete()
@@ -2025,9 +2013,6 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(10)
-                        await fek.edit_image("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
-                        await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
-                        await asyncio.sleep(10)
                         await fek.delete()
                         await message.delete()
                 except KeyError:
@@ -2035,9 +2020,6 @@ async def auto_filter(client, msg, spoll=False):
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(10)
-                        await fek.edit_image("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
-                        await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                         await asyncio.sleep(10)
                         await fek.delete()
                         await message.delete()
@@ -2056,9 +2038,6 @@ async def auto_filter(client, msg, spoll=False):
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(10)
-                    await fuk.edit_image("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
-                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
-                    await asyncio.sleep(10)
                     await fuk.delete()
                     await message.delete()
             except KeyError:
@@ -2066,9 +2045,6 @@ async def auto_filter(client, msg, spoll=False):
                 await save_group_settings(grpid, 'auto_delete', True)
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
-                    await asyncio.sleep(10)
-                    await fuk.edit_image("https://telegra.ph/file/35e13bea683e14ba8b7f2.jpg")
-                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ⁉️</b><b>🔍 Search Again ‼️</b>")
                     await asyncio.sleep(10)
                     await fuk.delete()
                     await message.delete()
