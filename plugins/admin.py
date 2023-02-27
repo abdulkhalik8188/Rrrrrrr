@@ -1,4 +1,4 @@
-import re, asyncio, time, shutil, psutil, os, sys
+import re, asyncio, time, shutil 
 from pyrogram import Client, filters, enums
 from pyrogram.types import *
 from info import ADMINS
