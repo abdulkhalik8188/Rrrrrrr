@@ -1115,13 +1115,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "group_info":
         buttons = [[
-            InlineKeyboardButton('Mᴀsᴛᴇʀ Bᴏᴛ Lᴏɢs', url="https://t.me"),
+            InlineKeyboardButton('ᴍᴀsᴛᴇʀ ꜰɪʟᴇs', url="),
         ],[
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url="https://t.me/at3movies"),
-            InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url="https://t.me/CinemaKovilakam")
+            InlineKeyboardButton('', url="https://t.me/at3movies"),
+            InlineKeyboardButton('', url="https://t.me/New_Movies_Fastly")
         ],[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url="https://t.me/MLZ_BOTZ"),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url="https://t.me/MLZ_BOTZ_SUPPORT")
+            InlineKeyboardButton('', url="https://t.me/MLZ_BOTZ"),
+            InlineKeyboardButton('', url="https://t.me/MLZ_BOTZ_SUPPORT")
         ],[
             InlineKeyboardButton('⇍ʙᴀᴄᴋ​', callback_data='about')
         ]]
