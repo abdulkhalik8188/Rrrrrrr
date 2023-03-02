@@ -45,9 +45,9 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ' callback_data='aboutpro'),
-            InlineKeyboardButton('sᴛᴀᴛᴜs' callback_data='stats'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ' callback_data='close_data')
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='aboutpro'),
+            InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
         ]]                  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
