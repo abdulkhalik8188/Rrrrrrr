@@ -738,12 +738,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 mh = await client.send_cached_media(
                     chat_id=FILE_CHANNEL,
                     file_id=file_id,
-                    caption=script.FILE_CHANNEL_TXT.format(title, size, query.from_user.mention, query.message.chat.title, temp.U_NAME),
+                    caption=script.FILE_CHANNEL_TXT.format(query.from_user.mention, title, size),
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
-                        [[
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        [[                          
+                          InlineKeyboardButton('ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/New_Movies_Fastly')
                         ]]
                     )
                 )
@@ -754,10 +753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📥  ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ  📥", url=f"{mh.link}")
-                        ],
-                        [
-                            InlineKeyboardButton("⚠️ ᴄᴀɴ'ᴛ ᴀᴄᴄᴇss ❓ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ⚠️", url=f"{FILE_CHANNEL_LINK}")
+                            InlineKeyboardButton("📥  ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ  📥", url=f"{mh.link}")                    
                         ]
                     ]
                 )
@@ -771,7 +767,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("checksub"):
         if (AUTH_CHANNEL or REQ_CHANNEL) and not await is_subscribed(client, query):
-            await query.answer("𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒\n@𝒄𝒊𝒏𝒆𝒎𝒂𝒍𝒂.𝒄𝒐𝒎", show_alert=True)
+            await query.answer("𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
