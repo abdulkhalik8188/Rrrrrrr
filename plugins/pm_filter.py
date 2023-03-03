@@ -830,7 +830,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton('Fɪʟᴇ Sᴇɴᴅ Mᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('Bᴏᴛ ᴘᴍ ✔'if settings["botpm"] else 'Cʜᴀɴɴᴇʟ',
+                    InlineKeyboardButton('Bᴏᴛ ᴘᴍ ✔' if settings["botpm"] else 'Cʜᴀɴɴᴇʟ',
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
