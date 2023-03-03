@@ -41,6 +41,10 @@ reqst_channel = environ.get('REQST_CHANNEL_ID')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
+# Custom Chats
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001832732995'))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+e7sbQsiP7tY4N2U1')
+
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
@@ -68,7 +72,6 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+BVP4yf8HHEFmNmJl")
 S_GROUP = environ.get('S_GROUP',"https://t.me/czdbotz_support")
 RUL_LNK = environ.get('RUL_LNK',"https://graph.org/%F0%9D%97%A0%F0%9D%9E%93%F0%9D%97%A6%F0%9D%97%A7%F0%9D%9E%9D%F0%9D%97%A5-02-15")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/czdbotz")
@@ -78,7 +81,6 @@ OWN_LNK = environ.get('S_GROUP',"https://t.me/AFxSU")
 MVG_LNK = environ.get('S_GROUP',"https://t.me/at3movies")
 MSG_ALRT = environ.get('MSG_ALRT', 'Piracy Is Crime')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'czdbotz_support')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
