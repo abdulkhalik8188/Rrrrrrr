@@ -1184,7 +1184,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "money_bot":
         buttons = [[
-            InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ sᴜᴘᴘᴏʀᴛ', url='https://t.me/MLZ_BOTZ_SUPPORT')
+        ],[
+            InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
