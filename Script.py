@@ -13,20 +13,6 @@ class script(object):
 
 ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴ.</b>
 
-    HELP_TXT = """
-<b>Hᴇʏ {}
-
-ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..
-
-🧨 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/AFxSU'>ꜰᴏxʏ ᴛɢ</a></b>"""
-
-    HELPER_TXT = """
-<b>ʜᴇy {}
-
-ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʜᴇʟᴩ ꜰᴏʀ ᴍy ᴄᴏᴍᴍᴀɴᴅꜱ.
-
-💞 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/AFxSU'>ꜰᴏxʏ ᴛɢ</a></b>"""
-
     ABOUT_TXT = """<b>
 ‣ ᴍʏ ɴᴀᴍᴇ : <a href='https://t.me/at3moviesofficalbot'>ᴅᴜʟǫᴇʀ ²·⁵</a>
 ‣ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ​</a>
@@ -556,3 +542,4 @@ Now You can start earning 💸 money today with our Simple and easy-to-use bot!
 ✪ ᴅᴀᴛᴀ ᴛʀᴀꜰɪᴄs ●●●●◌◌◌◌◌◌ 🛰
 
 ᴠ2.7.1 [sᴛᴀʙʟᴇ] """
+    
