@@ -447,27 +447,24 @@ Commands and Usage:
 • /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.
 • /dkick - to kick deleted accounts.
 """
-    GRP_TXT = """
-<b>𝐇𝐄𝐘 𝐁𝐑𝐔𝐇
-╔════❰ ᴜᴘᴅᴀᴛᴇs​ ❱═❍⊱❁۪۪
-║┏━━━━━━━━━━━━━━━➣
-║┣🎯✨ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄɪɴᴇᴍᴀ ᴋᴏᴠɪʟᴀᴋᴀᴍ❣
-║┣⚡️🍬ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇꜱ & ᴄʜᴀɴɴᴇʟꜱ 🦋✨
-║┗━━━━━━━━━━━━━━━➣
-║┏━━━━━━━━━━━━━━━➣
-║┣
-║┣🔰✥ <a href='https://t.me/CinemaKovilakam'>▷ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ◁</a>
-║┣
-║┣🔰✥ <a href='https://t.me/at3movies'>▷ ᴄɪɴᴇᴍᴀ ᴋᴏᴠɪʟᴀᴋᴀᴍ ɢʀᴏᴜᴘ 1 ◁</a>
-║┣
-║┣🔰✥ <a href='https://t.me/CinemaKovilakam_Group'>▷ ᴄɪɴᴇᴍᴀ ᴋᴏᴠɪʟᴀᴋᴀᴍ ɢʀᴏᴜᴘ 2 ◁</a>
-║┣
-║┣🔰✥ <a href='https://t.me/MLZ_BOTZ'>▷ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ​ ◁</a>
-║┣
-║┣🦋 ᴍʏ ʙᴇsᴛ ғʀɪᴇɴᴅ :<a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ 🙌</a>
-║┣
-║┗━━━━━━━━━━━━━━━➣
-╚══════════════════❍⊱❁</b>"""
+    EARN_TXT = """
+──────「 ᴇᴀʀɴ ᴍᴏɴᴇʏ 」─────
+
+Now You can start earning 💸 money today with our Simple and easy-to-use bot!
+
+›› Step 1: Add This bot to your group as an admin..
+
+›› Step 2: If you don't Using any shortner website then make account first on mdiskshortner.link (You can also use other link shortner website).
+
+›› Step 3: Copy your API from website and then, simply set your website and API Using the
+/set_shortner command
+
+› Like this :  /set_shortner shorturllink.in 7eddb02ee3a9e5ad7c207aab9cce5b34fadfe22f
+
+
+★ This bot will automatically converts links with Your Api and will provide your links.
+
+★ Don't wait any longer to start earning money from your telegram group. Add our bot today and start making money 💰!</b>"""
 
     DELF = """
 ꜱᴏʀʀʏ ᴅᴜᴅᴇ ☹,
