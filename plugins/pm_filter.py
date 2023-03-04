@@ -1111,7 +1111,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help2'),
             InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
-            InlineKeyboardButton('⌬ sᴜᴘᴘᴏʀᴛ ⌬', callback_data='support_group')
+            InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='money_bot')
         ]]                          
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1182,7 +1182,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "support_group":
+    elif query.data == "money_bot":
         buttons = [[
             InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='start')
         ]]
@@ -1192,8 +1192,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+    elif query.data == "dics_btn":
+        buttons = [[
+            InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='about')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
         await query.message.edit_text(
-            text=script.GRP_TXT,
+            text=script.DISC_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        await query.message.edit_text(
+            text=script.EARN_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1307,6 +1322,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('sᴏᴜʀᴄᴇ​', callback_data='source')
         ],[
             InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʙᴜɢs ᴀɴᴅ ꜰᴇᴇᴅʙᴀᴄᴋ​', url='https://t.me/MLZ_BOTZ_SUPPORT')
+        ],[            
+            InlineKeyboardButton('© ᴅɪsᴄʟᴀɪᴍᴇʀ​ ©', callback_data='disc_btn')
         ],[
             InlineKeyboardButton('♙ Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
