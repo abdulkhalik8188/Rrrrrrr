@@ -7,5 +7,5 @@ COPY requirements.txt /requirements.txt
 RUN cd /master_personal
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 WORKDIR /master_personal
-COPY start.sh /start.sh
+COPY . .
 CMD ["/bin/bash", "/start.sh"]
