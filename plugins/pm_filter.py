@@ -1091,6 +1091,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "format":
         await query.answer(text=script.FORMAT, show_alert=True)
+        
+    elif query.data == "rendering_info":
+        await query.answer(text=script.RENDERING_TXT, show_alert=True)
 
     elif query.data == "tips":
         await query.answer(text=script.TIPS, show_alert=True)
@@ -1314,7 +1317,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('↭ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ​↭', callback_data='help2')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(                     
+        await query.message.edit_text(             
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1324,7 +1327,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs​', callback_data='group_info'),
             InlineKeyboardButton('sᴏᴜʀᴄᴇ​', callback_data='source')
         ],[
-            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʙᴜɢs ᴀɴᴅ ꜰᴇᴇᴅʙᴀᴄᴋ​', url='https://t.me/MLZ_BOTZ_SUPPORT')
+            InlineKeyboardButton('🛰 ʀᴇɴᴅᴇʀɪɴɢ ɪɴꜰᴏ ☁️', callback_data='rendering_info')
         ],[            
             InlineKeyboardButton('© ᴅɪsᴄʟᴀɪᴍᴇʀ​ ©', callback_data='dics_btn')
         ],[
