@@ -544,7 +544,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Aᴜᴛᴏ Fɪʟᴛᴇʀ Dᴇʟ',
+                    'Aᴜᴛᴏ Dᴇʟᴇᴛᴇ',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -553,7 +553,27 @@ async def settings(client, message):
                 ),
             ],
             [
-                InlineKeyboardButton('Cʟᴏsᴇ Sᴇᴛᴛɪɴɢs', callback_data='close_data')
+                InlineKeyboardButton(
+                    'Mᴀx Bᴜᴛᴛᴏɴꜱ',
+                    callback_data=f'setgs#max_btn#{settings["max_btn"]}#{grp_id}',
+                ),
+                InlineKeyboardButton(
+                    '10' if settings["max_btn"] else f'{MAX_B_TN}',
+                    callback_data=f'setgs#max_btn#{settings["max_btn"]}#{grp_id}',
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    'SʜᴏʀᴛLɪɴᴋ',
+                    callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
+                ),
+                InlineKeyboardButton(
+                    'Eɴᴀʙʟᴇ' if settings["is_shortlink"] else 'Dɪsᴀʙʟᴇ',
+                    callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
+                ),
+            ],
+            [
+                InlineKeyboardButton('✘ Cʟᴏsᴇ ✘', callback_data='close_data')
             ]
         ]
 
