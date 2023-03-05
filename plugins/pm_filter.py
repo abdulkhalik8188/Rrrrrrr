@@ -1128,32 +1128,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         await query.answer(MSG_ALRT)
-
-    elif query.data == "group_info":
-        buttons = [[
-            InlineKeyboardButton('ᴍᴀsᴛᴇʀ ꜰɪʟᴇs', url="https://t.me/+AzHurE2uU3E2ZjRl"),
-        ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://t.me/at3movies"),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://t.me/New_Movies_Fastly")
-        ],[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url="https://t.me/MLZ_BOTZ"),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url="https://t.me/MLZ_BOTZ_SUPPORT")
-        ],[
-            InlineKeyboardButton('⇍ʙᴀᴄᴋ​', callback_data='about')
-        ]]
         
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.GROUP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
     elif query.data == "filters":
         buttons = [[
             InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ', callback_data='manuelfilter'),
@@ -1218,7 +1193,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        elif query.data == "setting_btn":
+    elif query.data == "setting_btn":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='help2')
         ]]
@@ -1233,7 +1208,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        elif query.data == "rule_btn":
+    elif query.data == "rule_btn":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='about')
         ]]
