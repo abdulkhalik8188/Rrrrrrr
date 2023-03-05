@@ -454,7 +454,7 @@ Now You can start earning 💸 money today with our Simple and easy-to-use bot!
 ›› Step 3: Copy your API from website and then, simply set your website and API Using the
 /set_shortner command
 
-› Like this :  /set_shortner shorturllink.in 7eddb02ee3a9e5ad7c207aab9cce5b34fadfe22f
+› Like this :  /set_shortner <code>shorturllink.in b4d510e7b1e56da54f43c9e27569ee0a281121db</code>
 
 
 ★ This bot will automatically converts links with Your Api and will provide your links.
