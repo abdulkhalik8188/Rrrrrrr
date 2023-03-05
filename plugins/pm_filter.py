@@ -1346,6 +1346,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "admin_stats":
+        buttons = [[
+            InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='stats')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ADMIN_STATUS_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "zombies":
         buttons = [[
             InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='help')
@@ -1742,6 +1752,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "stats":
         buttons = [[
+            InlineKeyboardButton('admin stats' callback_data='admin_stats')
+        ],[
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
