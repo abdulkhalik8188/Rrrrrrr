@@ -1752,7 +1752,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('admin stats', callback_data='admin_stats')
+            InlineKeyboardButton('ᴀᴅᴍɪɴ sᴛᴀᴛᴜs', callback_data='admin_stats')
         ],[
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
@@ -1775,9 +1775,36 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "admin_stats":
+        buttons = [[
+            InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='stats')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        ) 
+        uptime = get_readable_time(delta.seconds)
+        ram = psutil.virtual_memory().percent
+        cpu = psutil.cpu_percent()
+        total_users = await db.total_users_count()
+        totl_chats = await db.total_chat_count()
+        files = await Media.count_documents()
+        size = await db.get_db_size()
+        free = 536870912 - size
+        size = get_size(size)
+        free = get_size(free)
+        await query.message.edit_text(
+            text=script.ADMIN_STATUS_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
+            InlineKeyboardButton('ᴀᴅᴍɪɴ sᴛᴀᴛᴜs', callback_data='admin_stats')
+        ],[
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
