@@ -443,7 +443,7 @@ Commands and Usage:
 • /dkick - to kick deleted accounts.
 """
     EARN_TXT = """
-──────「 ᴇᴀʀɴ ᴍᴏɴᴇʏ 」─────
+<b>──────「 <a href='https://t.me/AFxSU'>ᴇᴀʀɴ ᴍᴏɴᴇʏ</a> 」─────
 
 Now You can start earning 💸 money today with our Simple and easy-to-use bot!
 
