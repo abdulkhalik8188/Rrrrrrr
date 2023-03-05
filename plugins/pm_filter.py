@@ -1264,11 +1264,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🎁 Mᴏʀᴇ Fᴇᴀᴛᴜʀᴇꜱ 🎁', callback_data='help')
         ], [
-            InlineKeyboardButton('⋆ ꜰɪʟᴛᴇʀs ⋆', callback_data='filters'),
-            InlineKeyboardButton('⋆ ꜰɪʟᴇ sᴛᴏʀᴇ ⋆', callback_data='store_file')
+            InlineKeyboardButton('∙ ꜰɪʟᴛᴇʀs ∙', callback_data='filters'),
+            InlineKeyboardButton('∙ ꜰɪʟᴇ sᴛᴏʀᴇ ∙', callback_data='store_file')
         ], [
-            InlineKeyboardButton('⋆ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ⋆', callback_data='coct'),
-            InlineKeyboardButton('⋆ ᴇxᴛʀᴀ ᴍᴏᴅs ⋆', callback_data='extra')
+            InlineKeyboardButton('∙ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ∙', callback_data='coct'),
+            InlineKeyboardButton('∙ ᴇxᴛʀᴀ ᴍᴏᴅs ∙', callback_data='extra')
         ], [
             InlineKeyboardButton('♙ ʜᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('♖ sᴛᴀᴛᴜs', callback_data='stats')
