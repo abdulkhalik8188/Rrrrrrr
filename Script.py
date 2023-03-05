@@ -594,6 +594,6 @@ coммand and υѕeѕ
 <b>♻️ ᴛᴏᴛᴀʟ:</b> <code>512 MB</code>
 <b>🉐 ᴏᴄᴄᴜᴘɪᴇᴅ:</b> <code>{}</code>
 <b>🆓 ғʀᴇᴇ:</b> <code>{}</code>
-<b>⍟────[ @KD_Botz ]─────⍟</b>"""
+<b>⍟────[ @at3movies]─────⍟</b>"""
 
     
