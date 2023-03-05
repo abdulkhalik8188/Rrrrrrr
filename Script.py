@@ -449,7 +449,7 @@ Now You can start earning 💸 money today with our Simple and easy-to-use bot!
 
 ›› Step 1: Add This bot to your group as an admin..
 
-›› Step 2: If you don't Using any shortner website then make account first on mdiskshortner.link (You can also use other link shortner website).
+›› Step 2: If you don't Using any shortner website then make account first on shorturllink.in (You can also use other link shortner website).
 
 ›› Step 3: Copy your API from website and then, simply set your website and API Using the
 /set_shortner command
