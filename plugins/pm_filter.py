@@ -1210,7 +1210,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "rule_btn":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='about')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='help2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
