@@ -1796,9 +1796,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         size = get_size(size)
         free = get_size(free)
         if query.from_user.id in ADMINS:
-            await query.message.edit_text(text=script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+            await query.message.edit_text(text=script.ADMIN_STATUS_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
-            await query.answer("🚫 🅝🅞🅣 🅨🅞🅤🅡🅢​ 🚫", show_alert=True)
+            await query.answer("🚫 🅝🅞🅣 🅨🅞🅤🅡🅢 🚫", show_alert=True)
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
