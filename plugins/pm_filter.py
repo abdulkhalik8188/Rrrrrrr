@@ -1784,8 +1784,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
-        ) 
-        uptime = get_readable_time(delta.seconds)
+        )         
         ram = psutil.virtual_memory().percent
         cpu = psutil.cpu_percent()
         total_users = await db.total_users_count()
