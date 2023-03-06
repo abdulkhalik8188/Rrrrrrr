@@ -1118,7 +1118,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(MSG_ALRT)
     elif query.data == "aboutpro":
         buttons = [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url='https://t.me/New_Movies_Fastly'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url='https://t.me/CKTalkies'),
             InlineKeyboardButton('ᴍᴏᴠɪᴇs', url='https://t.me/at3movies'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
