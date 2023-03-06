@@ -52,10 +52,12 @@ async def start(client, message):
             InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
             InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='money_bot')
-        ]]                       
+        ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
+        await message.reply_text(
             photo=random.choice(PICS),
+            text=(caption)
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -81,7 +83,9 @@ async def start(client, message):
         ]]                    
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
+        await message.reply_text(
             photo=random.choice(PICS),
+            text=(caption)
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
