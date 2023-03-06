@@ -117,9 +117,6 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
 
     STATUS_TXT =  """
-<b>⏳ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>
-<b>☣️ ᴄᴘᴜ:</b> <code>{}%</code>
-<b>☢️ ʀᴀᴍ:</b> <code>{}%</code>
 <b>📂 Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code></b>
 <b>👤 Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code></b>
 <b>♻️ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code></b>
