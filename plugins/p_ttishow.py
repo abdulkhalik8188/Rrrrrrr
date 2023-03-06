@@ -188,7 +188,32 @@ async def get_ststs(bot, message):
             parse_mode=enums.ParseMode.HTML
         )
 
-
+    
+@Client.on_message(filters.command('admin_stats') & filters.user(ADMINS) & filters.incoming)
+async def get_ststs(bot, message):
+    buttons = [[
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url=CHNL_LNK)
+    ]]
+    reply_markup = InlineKeyboardMarkup(buttons)
+    kdbotz = await message.reply('Fetching stats..')
+    now = datetime.now()
+    delta = now - bot.uptime
+    uptime = get_readable_time(delta.seconds)
+    ram = psutil.virtual_memory().percent
+    cpu = psutil.cpu_percent()
+    total_users = await db.total_users_count()
+    totl_chats = await db.total_chat_count()
+    files = await Media.count_documents()
+    size = await db.get_db_size()
+    free = 536870912 - size
+    size = get_size(size)
+    free = get_size(free)
+    await kdbotz.edit_text(
+            text=script.ADMIN_STATUS_TXT.format(uptime, cpu, ram, files, total_users, totl_chats, size, free),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
     if len(message.command) == 1:
