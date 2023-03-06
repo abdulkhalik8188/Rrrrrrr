@@ -2141,7 +2141,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"🎪 ᴛɪᴛɪʟᴇ:- {search}\n\n┏🕵️ ᴀsᴋᴇᴅ ʙʏ:- {message.from_user.mention}\n┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ</a>\n┗♻️ ᴄʜᴀɴɴᴇʟ : ​<a href='https://t.me/New_Movies_Fastly'>ᴀᴛ3 ꜰʟɪᴍ ꜰᴇsᴛ​</a>\n\n⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
+        cap = f"🎪 ᴛɪᴛɪʟᴇ:- {search}\n\n┏🕵️ ᴀsᴋᴇᴅ ʙʏ:- {message.from_user.mention}\n┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- <a href='https://t.me/{temp.U_NAME}'>ᴅᴜʟǫᴇʀ ²·⁵</a>\n┗♻️ ᴄʜᴀɴɴᴇʟ : ​<a href='https://t.me/New_Movies_Fastly'>ᴀᴛ3 ꜰʟɪᴍ ꜰᴇsᴛ​</a>\n\n⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
