@@ -1784,7 +1784,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
-        )         
+        ) 
+        uptime = psutil.boot_time()
         ram = psutil.virtual_memory().percent
         cpu = psutil.cpu_percent()
         total_users = await db.total_users_count()
@@ -1795,7 +1796,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         size = get_size(size)
         free = get_size(free)
         if query.from_user.id in ADMINS:
-            await query.message.edit_text(text=script.ADMIN_STATUS_TXT.format(cpu, ram, files, total_users, totl_chats, size, free), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+            await query.message.edit_text(text=script.ADMIN_STATUS_TXT.format(uptime, cpu, ram, files, total_users, totl_chats, size, free), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
             await query.answer("🚫 🅝🅞🅣 🅨🅞🅤🅡🅢 🚫", show_alert=True)
     elif query.data == "rfrsh":
