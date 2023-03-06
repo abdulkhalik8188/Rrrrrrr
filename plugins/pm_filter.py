@@ -1763,10 +1763,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
-        )  
-        uptime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - BOT_START_TIME))
-        ram = psutil.virtual_memory().percent
-        cpu = psutil.cpu_percent()
+        )         
         total = await Media.count_documents()
         users = await db.total_users_count()
         chats = await db.total_chat_count()
@@ -1775,7 +1772,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         monsize = get_size(monsize)
         free = get_size(free)
         await query.message.edit_text(
-            text=script.STATUS_TXT.format(uptime, cpu, ram, total, users, chats, monsize, free),
+            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1792,17 +1789,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         uptime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - BOT_START_TIME))
         ram = psutil.virtual_memory().percent
         cpu = psutil.cpu_percent()
-        total_users = await db.total_users_count()
-        totl_chats = await db.total_chat_count()
-        files = await Media.count_documents()
-        size = await db.get_db_size()
-        free = 536870912 - size
-        size = get_size(size)
+        total = await Media.count_documents()
+        users = await db.total_users_count()
+        chats = await db.total_chat_count()
+        monsize = await db.get_db_size()
+        free = 536870912 - monsize
+        monsize = get_size(monsize)
         free = get_size(free)
-        if query.from_user.id in ADMINS:
-            await query.message.edit_text(text=script.ADMIN_STATUS_TXT.format(uptime, cpu, ram, files, total_users, totl_chats, size, free), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
-        else:
-            await query.answer("🚫 🅝🅞🅣 🅨🅞🅤🅡🅢 🚫", show_alert=True)
+        await query.message.edit_text(
+            text=script.ADMIN_STATUS_TXT.format(uptime, cpu, ram, total, users, chats, monsize, free),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
