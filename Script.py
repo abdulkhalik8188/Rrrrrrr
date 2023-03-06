@@ -35,7 +35,7 @@ class script(object):
 ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.7.1 [sᴛᴀʙʟᴇ​]</b>"""
     SOURCE_TXT = """<b>NOTE:
 ⚠️ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
-◆ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://t.me/MLZ_BOTZ_SUPPORT'>ᴍʟᴢ ʙᴏᴛᴢ​</a>
+◆ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://github.com/matrixbotz0/PETER-PARKER-BOT'>ʜᴇʀᴇ</a>
 
 ◆ ᴅᴇᴠs ​1 : <a href='https://t.me/Autofilter_vipBot'>ʟɪsᴀ</a>
 ◆ ᴅᴇᴠs 2​ : <a href='https://t.me/crazyspiderr'>ꜱᴘɪᴅᴇʀ</a></b>"""
@@ -115,13 +115,6 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /request - <code>Tᴏ sᴇɴᴅ ᴀ Mᴏᴠɪᴇ/Sᴇʀɪᴇs ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ ʙᴏᴛ ᴀᴅᴍɪɴs. Oɴʟʏ ᴡᴏʀᴋs ᴏɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ. [Tʜɪs Cᴏᴍᴍᴀɴᴅ Cᴀɴ Bᴇ Usᴇᴅ Bʏ Aɴʏᴏɴᴇ]</code>
 • /delallg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
-
-    STATUS_TXT =  """
-<b>📂 Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code></b>
-<b>👤 Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code></b>
-<b>♻️ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code></b>
-<b>🗃️ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱</b>
-<b>🆓 Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝚒𝙱</b>"""
 
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
@@ -584,8 +577,7 @@ coммand and υѕeѕ
 🔹 ᴅᴏɴ'ᴛ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ᴛʜɪɴɢs ᴏᴛʜᴇʀ ᴛʜᴀɴ ᴍᴏᴠɪᴇ sᴇʀɪᴇs ᴀɴɪᴍᴇs..
 
 ⚙️ 𝖭ᴏᴛᴇ :- 𝖠ʟʟ ᴍᴇ𝗌𝗌ᴀɢᴇ𝗌 ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 𝟷𝟶 ᴍɪɴᴜᴛᴇ𝗌 ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ɪ𝗌𝗌ᴜᴇ𝗌.</b>"""
-    ADMIN_STATUS_TXT = """<b>⍟────[ ʙᴏᴛ sᴛᴀᴛᴜ𝗌 ]────⍟</b>
-    
+    STATUS_TXT = """   
  <b>⏳ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>
  
 <b>☣️ ᴄᴘᴜ:</b> <code>{}%</code>
@@ -598,12 +590,8 @@ coммand and υѕeѕ
 
 <b>👥 ɢʀᴏᴜᴘs:</b> <code>{}</code>
 
-<b>♻️ ᴛᴏᴛᴀʟ:</b> <code>512 MB</code>
-
 <b>🉐 ᴏᴄᴄᴜᴘɪᴇᴅ:</b> <code>{}</code>
 
-<b>🆓 ғʀᴇᴇ:</b> <code>{}</code>
-
-<b>⍟────[ @at3movies]─────⍟</b>"""
+<b>🆓 ғʀᴇᴇ:</b> <code>{}</code> """
 
     
