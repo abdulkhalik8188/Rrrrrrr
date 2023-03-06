@@ -118,6 +118,8 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 
     STATUS_TXT =  """
 <b>⏳ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>
+<b>☣️ ᴄᴘᴜ:</b> <code>{}%</code>
+<b>☢️ ʀᴀᴍ:</b> <code>{}%</code>
 <b>📂 Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code></b>
 <b>👤 Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code></b>
 <b>♻️ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code></b>
