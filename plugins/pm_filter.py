@@ -1752,9 +1752,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     elif query.data == "stats":
-        buttons = [[
-            InlineKeyboardButton('ᴀᴅᴍɪɴ sᴛᴀᴛᴜs', callback_data='admin_stats')
-        ],[
+        buttons = [[           
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
@@ -1764,28 +1762,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )         
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
-        await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "admin_stats":
-        buttons = [[
-            InlineKeyboardButton('⇍ʙᴀᴄᴋ', callback_data='stats')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        ) 
         uptime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - BOT_START_TIME))
         ram = psutil.virtual_memory().percent
         cpu = psutil.cpu_percent()
@@ -1797,15 +1773,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         monsize = get_size(monsize)
         free = get_size(free)
         await query.message.edit_text(
-            text=script.ADMIN_STATUS_TXT.format(uptime, cpu, ram, total, users, chats, monsize, free),
+            text=script.STATUS_TXT.format(uptime, cpu, ram, total, users, chats, monsize, free),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
+        )    
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
-        buttons = [[
-            InlineKeyboardButton('ᴀᴅᴍɪɴ sᴛᴀᴛᴜs', callback_data='admin_stats')
-        ],[
+        buttons = [[            
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
