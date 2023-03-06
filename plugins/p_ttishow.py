@@ -169,6 +169,7 @@ async def get_ststs(bot, message):
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     kdbotz = await message.reply('Fetching stats..')
+    uptime = psutil.boot_time()
     ram = psutil.virtual_memory().percent
     cpu = psutil.cpu_percent()
     total_users = await db.total_users_count()
@@ -179,7 +180,7 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await kdbotz.edit_text(
-            text=script.ADMIN_STATUS_TXT.format(cpu, ram, files, total_users, totl_chats, size, free),
+            text=script.ADMIN_STATUS_TXT.format(uptime, cpu, ram, files, total_users, totl_chats, size, free),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
