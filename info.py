@@ -45,12 +45,12 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # Custom Chats
-FILE_CHANNEL = environ.get('FILE_CHANNEL', '-1001832732995')
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001832732995'))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+e7sbQsiP7tY4N2U1')
 
 #VALUES
-HRK_APP_NAME = int(environ.get('HRK_APP_NAME', 'mybots'))
-HRK_API = int(environ.get('HRK_API', '0'))
+HRK_APP_NAME = environ.get('HRK_APP_NAME', 'mybots')
+HRK_API = environ.get('HRK_API', '0')
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
