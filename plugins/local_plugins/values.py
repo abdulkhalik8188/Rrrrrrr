@@ -1,6 +1,6 @@
 from pyrogram import Client, filters, enums
 import heroku3
-from info import ADMINS
+from info import ADMINS, HRK_API, HRK_APP_NAME
 
 HRK_API = #api
 HRK_APP_NAME = #ur Heroku App Name
