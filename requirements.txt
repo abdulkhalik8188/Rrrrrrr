@@ -12,3 +12,4 @@ pytz
 aiohttp
 python-dotenv
 psutil
+heroku3
