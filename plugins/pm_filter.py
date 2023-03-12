@@ -1796,7 +1796,6 @@ async def auto_filter(client, msg, spoll=False):
     m=await message.reply_text("<b><i>🧐 Checking Your Movie In My Database</i></b>") 
     await asyncio.sleep(2)
     await m.delete()
-    await message.delete()
     
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
