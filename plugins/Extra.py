@@ -1,5 +1,6 @@
 import time
 import random
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from Script import script
 
