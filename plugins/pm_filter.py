@@ -1198,7 +1198,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.DELF, show_alert=True)
         
    elif query.data == "help":
-        await query.answer(text=script.DELF, show_alert=True)
+        await query.answer(text=script.HELP_TXT, show_alert=True)
 
     elif query.data == "start":
         buttons = [[
