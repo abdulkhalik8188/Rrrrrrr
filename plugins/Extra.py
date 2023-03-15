@@ -16,7 +16,7 @@ async def extra(_, message):
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(
-            text=script.EXTRA_TXT
+            text=script.EXTRA_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )    
