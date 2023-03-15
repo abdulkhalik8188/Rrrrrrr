@@ -13,7 +13,7 @@ async def check_alive(_, message):
 @Client.on_message(filters.command("extra", CMD))
 async def extra(_, message):
     buttons = [[
-            InlineKeyboardButton('close', callback_data='close_data')
+            InlineKeyboardButton('✘ ᴄʟᴏsᴇ ✘', callback_data='close_data')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(
