@@ -1196,6 +1196,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "delf":
         await query.answer(text=script.DELF, show_alert=True)
+        
+   elif query.data == "help":
+        await query.answer(text=script.DELF, show_alert=True)
 
     elif query.data == "start":
         buttons = [[
@@ -1303,7 +1306,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help2":
         buttons = [[
-            InlineKeyboardButton('🎁 Mᴏʀᴇ Fᴇᴀᴛᴜʀᴇꜱ 🎁', callback_data='help')
+            InlineKeyboardButton('🍷 ᴄʟᴏɴᴇ 🍷', callback_data='help')
         ], [
             InlineKeyboardButton('∙ ꜰɪʟᴛᴇʀs ∙', callback_data='filters'),
             InlineKeyboardButton('∙ ꜰɪʟᴇ sᴛᴏʀᴇ ∙', callback_data='store_file')
