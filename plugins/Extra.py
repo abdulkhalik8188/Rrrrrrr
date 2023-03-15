@@ -11,9 +11,16 @@ async def check_alive(_, message):
 
 @Client.on_message(filters.command("extra", CMD))
 async def extra(_, message):
-    await message.reply_text(script.EXTRA_TXT)
-
-
+    buttons = [[
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url=CHNL_LNK)
+    ]]
+    reply_markup = InlineKeyboardMarkup(buttons)
+    await message.reply_text(
+            text=script.EXTRA_TXT
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )    
+    
 @Client.on_message(filters.command("tutorial", CMD))
 async def tutorial(_, message):
     await message.reply_text("😎")
