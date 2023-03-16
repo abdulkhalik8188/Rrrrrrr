@@ -8,7 +8,7 @@ CMD = ["/", "."]
 
 @Client.on_message(filters.command("alive", CMD))
 async def check_alive(_, message):
-    await message.reply_text("𝖡𝗎𝖽𝖽𝗒 𝖨𝖺𝗆 𝖠𝗅𝗂𝗏𝖾 😁")
+    await message.reply_text("Hey Buddy I Am Alive 🌚")
 
 @Client.on_message(filters.command("extra", CMD))
 async def extra(_, message):
