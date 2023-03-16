@@ -806,3 +806,26 @@ async def shortlink(bot, message):
     await save_group_settings(grpid, 'shortlink_api', api)
     await save_group_settings(grpid, 'is_shortlink', True)
     await reply.edit_text(f"<b>Successfully added shortlink API for {title}.\n\nCurrent Shortlink Website: <code>{shortlink_url}</code>\nCurrent API: <code>{api}</code></b>")
+
+@Client.on_message(filters.command("deletefiles") & filters.user(ADMINS))
+async def deletemultiplefiles(bot, message):
+    btn = [[
+            InlineKeyboardButton("PʀᴇDVD", callback_data="predvd"),
+            InlineKeyboardButton("PʀᴇDVD Rɪᴘ", callback_data="predvdrip")
+          ],[
+            InlineKeyboardButton("HDᴛs", callback_data="hdts"),
+            InlineKeyboardButton("HD-ᴛs", callback_data="hdtss")
+          ],[
+            InlineKeyboardButton("HDCᴀᴍ", callback_data="hdcam"),
+            InlineKeyboardButton("HD-Cᴀᴍ", callback_data="hdcams")
+          ],[
+            InlineKeyboardButton("CᴀᴍRɪᴘ", callback_data="camrip"),
+            InlineKeyboardButton("S-Pʀɪɴᴛ", callback_data="sprint")
+          ],[
+            InlineKeyboardButton("Cᴀɴᴄᴇʟ", callback_data="close_data")
+          ]]
+    await message.reply_text(
+        text="<b>Sᴇʟᴇᴄᴛ Tʜᴇ Tʏᴘᴇ Oғ Fɪʟᴇs Yᴏᴜ Wᴀɴᴛ Tᴏ Dᴇʟᴇᴛᴇ..?</b>",
+        reply_markup=InlineKeyboardMarkup(btn),
+        quote=True
+    ) 
