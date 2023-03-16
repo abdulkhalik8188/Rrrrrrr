@@ -45,8 +45,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ​', url='https://t.me/at3movies'),
-            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ 🧑‍💻', user_id='5977113116')
+            InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ​', url='https://t.me/at3movies'),
+            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', user_id='5977113116')
             ],[      
             InlineKeyboardButton('🎭 ʜᴇʟᴘ 🎭', callback_data='help2'),
             InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
@@ -71,8 +71,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ​', url='https://t.me/at3movies'),
-            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ 🧑‍💻', user_id='5977113116')
+            InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ​', url='https://t.me/at3movies'),
+            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', user_id='5977113116')
             ],[      
             InlineKeyboardButton('🎭 ʜᴇʟᴘ 🎭', callback_data='help2'),
             InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
