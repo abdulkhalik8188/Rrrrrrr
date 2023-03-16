@@ -742,7 +742,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=script.FILE_CHANNEL_TXT.format(query.from_user.mention, title, size),
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
-                        [[                          
+                        [[ 
+                          InlineKeyboardButton('🇮🇳 ᴍᴀʟ', callback_data='malayalam'),
+                          InlineKeyboardButton('🇮🇳 ʜɪɴ', callback_data='hindi'),
+                          InlineKeyboardButton('🇮🇳 ᴛᴀᴍ', callback_data='tamil')
+                        ],[                         
                           InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ ❆", url='t.me/CKTalkies')
                         ]]
                     )
@@ -755,9 +759,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton("📥  ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ  📥", url=f"{mh.link}")
-                        ],
-                        [
-                            InlineKeyboardButton("⚠️ ᴄᴀɴ'ᴛ ᴀᴄᴄᴇss ❓ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ⚠️", url=f"{FILE_CHANNEL_LINK}")
                         ]
                     ]
                 )
@@ -1199,6 +1200,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "help":
         await query.answer(text=script.HELP_TXT, show_alert=True)
+
+    elif query.data == "malayalam":
+        await query.answer(text=script.MALAYALAM_TXT, show_alert=True)
+
+    elif query.data == "hindi":
+        await query.answer(text=script.HINDI_TXT, show_alert=True)
+
+    elif query.data == "tamil":
+        await query.answer(text=script.TAMIL_TXT, show_alert=True)
 
     elif query.data == "start":
         buttons = [[
