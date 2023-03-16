@@ -497,7 +497,7 @@ Now You can start earning 💸 money today with our Simple and easy-to-use bot!
 <b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{}</b>
 """
     FILE_CHANNEL_TXT = """
-🕵️ ʀᴇǫᴜsᴛᴇᴅ ʙʏ : {} 🍷
+🍷 ʀᴇǫᴜsᴛᴇᴅ ʙʏ : {}
 
 <code>{}</code>
 ------------------------------------
