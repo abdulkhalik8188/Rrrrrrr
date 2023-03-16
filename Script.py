@@ -514,7 +514,7 @@ This file 📁 will be deleted ❌ from this group 📍 within 10 ⏰ minutes du
 
 🔖 Fɪʟᴇ Sɪᴢᴇ : {}
 
-⏱ ᴜᴘᴛɪᴍᴇ : ꜰᴇᴡ ᴅᴀʏs ᴀɢᴏ​ 🤘</b>"""
+⏱ ᴜᴘᴛɪᴍᴇ : <code>{}</code> </b>"""
     
     DISC_TXT = """
 <b><code>ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
