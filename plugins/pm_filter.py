@@ -2109,7 +2109,7 @@ async def advantage_spell_chok(client, msg):
           ),
             InlineKeyboardButton(
             text="ɢᴏᴏɢʟᴇ",
-            url=f"https://google.com/search?q={search}"
+            url=f"https://google.com/search?q={reqst_gle}"
           )
        ]]
         if NO_RESULTS_MSG:
@@ -2132,7 +2132,7 @@ async def advantage_spell_chok(client, msg):
         ),
             InlineKeyboardButton(
             text="ɢᴏᴏɢʟᴇ",
-            url=f"https://google.com/search?q={search}"
+            url=f"https://google.com/search?q={reqst_gle}"
         )
     ]]
         if NO_RESULTS_MSG:
