@@ -719,7 +719,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         size = get_size(files.file_size)
         f_caption = files.caption
         uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - BOT_START_TIME))
-        
+        x = datetime.datetime.now()
+        time = x.strftime("%H")
+        if time < "12":
+            get="Good Morning"
+        elif time < "15": 
+            get="Good After Noon"
+        else:
+            get="Good Even"
         settings = await get_settings(query.message.chat.id)
         if CUSTOM_FILE_CAPTION:
             try:
@@ -755,7 +762,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         ]]
                     )
                 )
-                mh8 = await query.message.reply(script.FILE_READY_TXT.format(query.from_user.mention, title, size, uptime),
+                mh8 = await query.message.reply(script.FILE_READY_TXT.format(query.from_user.mention, get, title, size, uptime),
                 True,
                 enums.ParseMode.HTML,
                 disable_web_page_preview=True,
