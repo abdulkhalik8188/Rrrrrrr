@@ -1237,10 +1237,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         oyaah = await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
+            InputMediaPhoto(random.choice(PICS)
             await asyncio.sleep(30)
             await oyaah.delete()
-            await message.delete()
+            await message.delete())
         )
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
