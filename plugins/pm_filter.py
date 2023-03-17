@@ -2140,8 +2140,7 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button)
         )
         await asyncio.sleep(20)
-        await k.delete()
-        await message.delete()
+        await k.delete()      
         return
     movielist = []
     if not movies:
@@ -2157,7 +2156,6 @@ async def advantage_spell_chok(client, msg):
         )
         await asyncio.sleep(20)
         await k.delete()
-        await message.delete()
         return
     movielist += [movie.get('title') for movie in movies]
     movielist += [f"{movie.get('title')} {movie.get('year')}" for movie in movies]
@@ -2180,7 +2178,6 @@ async def advantage_spell_chok(client, msg):
         if settings['auto_delete']:
             await asyncio.sleep(60)
             await spell_check_del.delete()
-            await message.delete()
     except KeyError:
             grpid = await active_connection(str(message.from_user.id))
             await save_group_settings(grpid, 'auto_delete', True)
@@ -2188,7 +2185,6 @@ async def advantage_spell_chok(client, msg):
             if settings['auto_delete']:
                 await asyncio.sleep(60)
                 await spell_check_del.delete()
-                await message.delete()
 
 
 async def manual_filters(client, message, text=False):
