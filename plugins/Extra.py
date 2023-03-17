@@ -9,10 +9,10 @@ CMD = ["/", "."]
 
 @Client.on_message(filters.command("alive", CMD))
 async def check_alive(_, message):
-    await message.reply_sticker("CAACAgIAAxkBAAEIK1lkFAN0BjHbiwRY08v-7EFYRqI2fQACKRgAAhP_2UkVxgiD_rlLGS8E")
+    myrr = await message.reply_sticker("CAACAgIAAxkBAAEIK1lkFAN0BjHbiwRY08v-7EFYRqI2fQACKRgAAhP_2UkVxgiD_rlLGS8E")
     await message.reply_text("ʜᴇʏ ʙᴜᴅᴅʏ ɪ ᴀᴍ ᴀʟɪᴠᴇ 💃\n\nᴄʟɪᴄᴋ /start ꜰᴏʀ ᴍᴏʀᴇ​ 😻")
     await asyncio.sleep(30)
-    await kd.delete()
+    await myrr.delete()
     await message.delete()
     
 @Client.on_message(filters.command("extra", CMD))
