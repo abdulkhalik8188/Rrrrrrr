@@ -1,7 +1,6 @@
 # Kanged From @TroJanZheX
 import asyncio
 import re
-from datetime import datetime, timedelta
 import ast
 import math
 import random
@@ -53,7 +52,7 @@ async def give_filter(client, message):
             InlineKeyboardButton("🔁 Request Again & Unmute Me 🗣", callback_data=f"check_subscribed")
         ]]
         try:
-            await client.restrict_chat_member(message.chat.id, message.from_user.id, ChatPermissions(), datetime.now() + timedelta(minutes=5))
+            await client.restrict_chat_member(message.chat.id, message.from_user.id, ChatPermissions(), datetime.datetime.now() + datetime.timedelta(minutes=5))
         except:
             pass
         await message.reply_text("Please join my Updates Channel", reply_markup=InlineKeyboardMarkup(btn))
