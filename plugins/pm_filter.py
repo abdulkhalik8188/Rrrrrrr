@@ -1211,10 +1211,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "help":
         await query.answer(text=script.HELP_TXT, show_alert=True)
-        
-    elif query.data == "splmd":
-        await query.answer(text=script.SPLMD, show_alert=True)
-
+     
     elif query.data == "malayalam":
         await query.answer(text=script.MALAYALAM_TXT, show_alert=True)
 
@@ -2103,20 +2100,13 @@ async def advantage_spell_chok(client, msg):
         logger.exception(e)
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-        InlineKeyboardButton(
-            text="ɪɴsᴛʀᴜᴄᴛɪᴏɴs",
-            callback_data="splmd"
-          ),
-            InlineKeyboardButton(
-            text="ɢᴏᴏɢʟᴇ",
-            url=f"https://google.com/search?q={reqst_gle}"
-          )
-       ]]
+        InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ​ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")            
+        ]]
         if NO_RESULTS_MSG:
             await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
   
         k = await msg.reply_text(
-            text=script.I_CUDNT.format(mv_rqst),
+            text=("sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ\n\nᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ !!"),
             reply_markup=InlineKeyboardMarkup(button)
         )
         await asyncio.sleep(30)
@@ -2126,19 +2116,12 @@ async def advantage_spell_chok(client, msg):
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-        InlineKeyboardButton(
-            text="ɪɴsᴛʀᴜᴄᴛɪᴏɴs",
-            callback_data="splmd"
-        ),
-            InlineKeyboardButton(
-            text="ɢᴏᴏɢʟᴇ",
-            url=f"https://google.com/search?q={reqst_gle}"
-        )
-    ]]
+        InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ​ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")   
+        ]]
         if NO_RESULTS_MSG:
             await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
         k = await msg.reply_text(
-            text=script.I_CUDNT.format(mv_rqst),
+            text=("sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ\n\nᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ !!"),
             reply_markup=InlineKeyboardMarkup(button)
         )
         await asyncio.sleep(30)
