@@ -1,5 +1,6 @@
 import time
 import random
+import asyncio
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums
 from Script import script
