@@ -41,6 +41,17 @@ SPELL_CHECK = {}
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
+    if AUTH_CHANNEL and not await is_subscribed(client, message):
+        try:
+            invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
+        except:
+            return
+        btn = [[
+            InlineKeyboardButton("📢 Updates Channel 📢", url=invite_link.invite_link)
+        ]]
+        await message.reply_text("Please join my Updates Channel", reply_markup=InlineKeyboardMarkup(btn))
+        return
+    
     if message.chat.id != SUPPORT_CHAT_ID:
         await global_filters(client, message)
     manual = await manual_filters(client, message)
