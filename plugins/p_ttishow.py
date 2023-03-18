@@ -162,7 +162,7 @@ async def re_enable_chat(bot, message):
     temp.BANNED_CHATS.remove(int(chat_))
     await message.reply("Chat Successfully re-enabled")
 
-
+    
 @Client.on_message(filters.command('stats') & filters.user(ADMINS) & filters.incoming)
 async def get_ststs(bot, message):
     buttons = [[
@@ -183,11 +183,10 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await kdbotz.edit_text(
-            text=script.STATUS_TXT.format(uptime, cpu, ram, files, total_users, totl_chats, size, free),
+            text=script.ADMIN_STATUS_TXT.format(uptime, cpu, ram, files, total_users, totl_chats, size, free),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-
     
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
