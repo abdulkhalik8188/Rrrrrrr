@@ -164,7 +164,6 @@ async def next_page(bot, query):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
             )
@@ -172,8 +171,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),                  
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
             )
@@ -186,7 +184,6 @@ async def next_page(bot, query):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
             )
@@ -195,7 +192,6 @@ async def next_page(bot, query):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
             )
@@ -289,7 +285,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton(f'⛔️ ᴊᴏɪɴ ꜰᴏʀ ɴᴇᴡ ᴍᴏᴠɪᴇs​ ⛔️', url='https://t.me/CKTalkies')
+        InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1897,7 +1893,6 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
             )
@@ -1906,7 +1901,6 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
             )
@@ -1918,8 +1912,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),                  
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
             )
@@ -1928,13 +1921,12 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
                 ]
             )
 
     btn.insert(0, [
-        InlineKeyboardButton(f'⛔️ ᴊᴏɪɴ ꜰᴏʀ ɴᴇᴡ ᴍᴏᴠɪᴇs​ ⛔️', url='https://t.me/CKTalkies')
+        InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
     ])
 
     m=await message.reply_text("<b><i>🧐 Checking Your Movie In My Database</i></b>") 
