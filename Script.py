@@ -170,7 +170,7 @@ Nᴀᴍᴇ - {}
 <b>@at3movies {file_name}
 
 ╭────── • ◆ • ──────╮
-📮ᴊᴏɪɴ : <a href='https://t.me/New_Movies_Fastly'>ᴄʜᴀɴɴᴇʟ</a>
+📮ᴊᴏɪɴ : <a href='https://t.me/CKTalkies'>ᴄʜᴀɴɴᴇʟ</a>
 🔖 ᴍᴏᴠɪᴇs : <a href='https://t.me/at3movies'>ɢʀᴏᴜᴘ</a>
 🖤 Dᴀʀᴋ Mᴏᴅᴇ : <a href='https://t.me/addtheme/DQ_The_File_Donor_Theme'>Tᴏᴜᴄʜ</a>
 ╰────── • ◆ • ──────╯
