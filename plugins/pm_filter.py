@@ -101,7 +101,7 @@ async def next_page(bot, query):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"▫️{get_size(file.file_size)} ⊳ {file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
+                        text=f"🎭[{get_size(file.file_size)} 🔸 {file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                     ),
                 ]
                 for file in files
@@ -124,7 +124,7 @@ async def next_page(bot, query):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"▫️{get_size(file.file_size)} ⊳ {file.file_name}", callback_data=f'files#{file.file_id}'
+                        text=f"🎭[{get_size(file.file_size)} 🔸 {file.file_name}", callback_data=f'files#{file.file_id}'
                     ),
                 ]
                 for file in files
@@ -268,7 +268,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("🌍 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘𝗦 🌍", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
+        InlineKeyboardButton(f'🔍 {search} 🔎', 'reqst1')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1821,7 +1821,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"▫️{get_size(file.file_size)} ⊳ {file.file_name}", url=await get_shortlink(message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
+                        text=f"🎭[{get_size(file.file_size)} 🔸 {file.file_name}", url=await get_shortlink(message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                     ),
                 ]
                 for file in files
@@ -1845,7 +1845,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"▫️{get_size(file.file_size)} ⊳ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                        text=f"🎭[{get_size(file.file_size)} 🔸 {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                     ),
                 ]
                 for file in files
@@ -1905,7 +1905,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("🌍 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘𝗦 🌍", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
+        InlineKeyboardButton(f'🔍 {search} 🔎', 'reqst1')
     ])
 
     m=await message.reply_text("<b><i>🧐 Checking Your Movie In My Database</i></b>") 
