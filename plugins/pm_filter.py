@@ -1242,7 +1242,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ​', url='https://t.me/at3movies'),
             InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', callback_data='owner_info')
             ],[      
-            InlineKeyboardButton('💠 ʜᴇʟᴘ 💠', callback_data='help2'),
+            InlineKeyboardButton('🍃 ʜᴇʟᴘ 🍃', callback_data='help2'),
             InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
             ],[
             InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='money_bot')
