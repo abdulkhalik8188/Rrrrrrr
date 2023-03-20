@@ -1240,7 +1240,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ​', url='https://t.me/at3movies'),
-            InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', user_id='5977113116')
+            InlineKeyboardButton('👨‍💻 ᴅᴇᴠ​', callback_data='owner_info')
             ],[      
             InlineKeyboardButton('🎭 ʜᴇʟᴘ 🎭', callback_data='help2'),
             InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
@@ -1283,6 +1283,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.GFILTER_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "owner_info":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('✧ ᴄᴏɴᴛᴀᴄᴛ​', url='t.me/af_x_su')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.OWNER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
