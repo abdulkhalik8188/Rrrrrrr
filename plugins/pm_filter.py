@@ -295,6 +295,7 @@ async def advantage_spoll_choker(bot, query):
     if k == False:
         files, offset, total_results = await get_search_results(query.message.chat.id, movie, offset=0, filter=True)
         if files:
+            await query.message.delete()
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
@@ -2127,8 +2128,7 @@ async def advantage_spell_chok(client, msg):
         await asyncio.sleep(20)
         await k.delete()
         return
-    movielist += [movie.get('title') for movie in movies]
-    movielist += [f"{movie.get('title')} {movie.get('year')}" for movie in movies]
+    movielist = [movie.get('title') for movie in movies]
     SPELL_CHECK[mv_id] = movielist
     btn = [
         [
