@@ -27,7 +27,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = time()
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/ac524f66eec140ec69db5.jpg https://telegra.ph/file/bd94ba94b8bd34793cc81.jpg https://telegra.ph/file/0fd19a01130a1dec30ee2.jpg https://telegra.ph/file/9e71045e92e89ecf0b1cd.jpg https://telegra.ph/file/f739b561482df0be0a644.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/2fe44861c6473491a98f7.jpg")
+NOR_IMG = (environ.get('NOR_IMG', 'https://telegra.ph/file/2fe44861c6473491a98f7.jpg https://telegra.ph/file/46443096bc6895c74a716.jpg https://telegra.ph/file/a7ea55f5e27e90f81a681.jpg https://telegra.ph/file/1537e577fabc3c2836ea3.jpg https://telegra.ph/file/f2afbd291e18f2bd13a79.jpg https://telegra.ph/file/a54b3a9cf3cb32dc75d2c.jpg https://telegra.ph/file/8ab607a0ae37243d3e5eb.jpg')).split() 
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b990044507.mp4")
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/732a9f89be5a9cd63289b.jpg")
 
