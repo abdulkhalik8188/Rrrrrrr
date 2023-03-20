@@ -1932,9 +1932,9 @@ async def auto_filter(client, msg, spoll=False):
         InlineKeyboardButton(f'🔍 {search} 🔎', 'reqst1')
     ])
 
-    m=await message.reply_text("<b>⚠️ Sᴇᴀʀᴄʜɪɴɢ Yᴏᴜʀ Rᴇꜱᴜʟᴛꜱ 🔍</b>") 
-    await asyncio.sleep(2)
-    await m.delete()
+    #m=await message.reply_text("<b>⚠️ Sᴇᴀʀᴄʜɪɴɢ Yᴏᴜʀ Rᴇꜱᴜʟᴛꜱ 🔍</b>") 
+    #await asyncio.sleep(2)
+    #await m.delete()
     
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
