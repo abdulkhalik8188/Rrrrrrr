@@ -146,16 +146,18 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
+                    InlineKeyboardButton(f'📟 ꜰɪʟᴇs: {len(files)}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'ᴛɪᴘs ⚜', 'tips')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),                  
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
+                    InlineKeyboardButton(f'📟 ꜰɪʟᴇs: {len(files)}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'ᴛɪᴘs ⚜', 'tips')
                 ]
             )
                 
@@ -166,16 +168,18 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
+                    InlineKeyboardButton(f'📟 ꜰɪʟᴇs: {len(files)}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'ᴛɪᴘs ⚜', 'tips')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
+                    InlineKeyboardButton(f'📟 ꜰɪʟᴇs: {len(files)}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'ᴛɪᴘs ⚜', 'tips')
                 ]
             )
     try:
@@ -1871,16 +1875,18 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
+                    InlineKeyboardButton(f'📟 ꜰɪʟᴇs: {len(files)}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'ᴛɪᴘs ⚜', 'tips')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
+                    InlineKeyboardButton(f'📟 ꜰɪʟᴇs: {len(files)}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'ᴛɪᴘs ⚜', 'tips')
                 ]
             )
                 
@@ -1891,16 +1897,18 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),                  
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
+                    InlineKeyboardButton(f'📟 ꜰɪʟᴇs: {len(files)}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'ᴛɪᴘs ⚜', 'tips')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips')
+                    InlineKeyboardButton(f'📟 ꜰɪʟᴇs: {len(files)}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'ᴛɪᴘs ⚜', 'tips')
                 ]
             )
 
