@@ -190,7 +190,7 @@ async def next_page(bot, query):
             elif offset == 0:
                 off_set = None
             else:
-                off_set = offset - 7
+                off_set = offset - 10
             if n_offset == 0:
                 btn.append(
                     [InlineKeyboardButton("≪ ʙᴀᴄᴋ​", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset) / MAX_BTN)+1} / {math.ceil(total / MAX_BTN)}", callback_data="pages")]
@@ -230,12 +230,12 @@ async def next_page(bot, query):
         await save_group_settings(query.message.chat.id, 'max_btn', False)
         settings = await get_settings(query.message.chat.id)
         if settings['max_btn']:
-            if 0 < offset <= 7:
+            if 0 < offset <= 10:
                 off_set = 0
             elif offset == 0:
                 off_set = None
             else:
-                off_set = offset - 7
+                off_set = offset - 10
             if n_offset == 0:
                 btn.append(
                     [InlineKeyboardButton("ɴᴇxᴛ​ ≫", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
