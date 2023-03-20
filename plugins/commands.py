@@ -27,7 +27,7 @@ async def start(client, message):
                 InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs', url="https://t.me/MLZ_BOTZ")
             ],
             [
-                InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=alive"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -136,7 +136,8 @@ async def start(client, message):
                          [
                           InlineKeyboardButton("🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩​🎁" url=f'http://t.me/TGxMULTIBOT?startgroup=true')
                         ],[
-      InlineKeyboardButton("
+                          InlineKeyboardButton("🌿 ɢʀᴏᴜᴘ", url='https://t.me/at3movies'),
+                          InlineKeyboardButton("🍂 ᴄʜᴀɴɴᴇʟ", url='https://t.me/CKTalkies')
                          ]
                         ]
                     )
@@ -152,7 +153,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://t.me/New_Movies_Fastly")
+                          InlineKeyboardButton("🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩​🎁" url=f'http://t.me/TGxMULTIBOT?startgroup=true')
+                        ],[
+                          InlineKeyboardButton("🌿 ɢʀᴏᴜᴘ", url='https://t.me/at3movies'),
+                          InlineKeyboardButton("🍂 ᴄʜᴀɴɴᴇʟ", url='https://t.me/CKTalkies')
                          ]
                         ]
                     )
@@ -249,12 +253,15 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                     [
-                      InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://t.me/New_Movies_Fastly")
-                     ]
-                    ]
+                         [
+                          InlineKeyboardButton("🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩​🎁" url=f'http://t.me/TGxMULTIBOT?startgroup=true')
+                        ],[
+                          InlineKeyboardButton("🌿 ɢʀᴏᴜᴘ", url='https://t.me/at3movies'),
+                          InlineKeyboardButton("🍂 ᴄʜᴀɴɴᴇʟ", url='https://t.me/CKTalkies')
+                         ]
+                        ]
+                    )
                 )
-            )
             filetype = msg.media
             file = getattr(msg, filetype.value)
             title = file.file_name
@@ -300,11 +307,14 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://t.me/New_Movies_Fastly")
+              InlineKeyboardButton("🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩​🎁" url=f'http://t.me/TGxMULTIBOT?startgroup=true')
+            ],[
+              InlineKeyboardButton("🌿 ɢʀᴏᴜᴘ", url='https://t.me/at3movies'),
+              InlineKeyboardButton("🍂 ᴄʜᴀɴɴᴇʟ", url='https://t.me/CKTalkies')
              ]
-            ]
-        )
-    )
+              ]
+       )
+  )
                     
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
