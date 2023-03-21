@@ -1,8 +1,3 @@
-# © kinzaNoufal ™
-# © munnipopz
-# 2021
-
-
 import os , glob
 from os import error
 import logging
