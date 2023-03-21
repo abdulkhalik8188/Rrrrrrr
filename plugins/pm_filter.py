@@ -1936,7 +1936,6 @@ async def auto_filter(client, msg, spoll=False):
     btn.insert(0, [
         InlineKeyboardButton(f'🔍 {search} 🔎', 'reqst1')
     ])
-    await message.delete()
     #m=await message.reply_text("<b>⚠️ Sᴇᴀʀᴄʜɪɴɢ Yᴏᴜʀ Rᴇꜱᴜʟᴛꜱ 🔍</b>") 
     #await asyncio.sleep(2)
     #await m.delete()
