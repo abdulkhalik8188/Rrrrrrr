@@ -13,3 +13,4 @@ aiohttp
 python-dotenv
 psutil
 heroku3
+openai
