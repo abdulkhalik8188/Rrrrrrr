@@ -2099,11 +2099,11 @@ async def auto_filter(client, msg, spoll=False):
             fuk = await message.reply_photo(photo=random.choice(NOR_IMG), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
-                    await asyncio.sleep(600)
+                    await asyncio.sleep(10)
                     xux=await message.reply_photo(
                         photo=("https://telegra.ph/file/f7738f04ea74e16c9db02.jpg"),
                         caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
-                    await asyncio.sleep(30)
+                    await asyncio.sleep(10)
                     await fuk.delete()
                     await xux.delete()
                     
@@ -2112,11 +2112,11 @@ async def auto_filter(client, msg, spoll=False):
                 await save_group_settings(grpid, 'auto_delete', True)
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
-                    await asyncio.sleep(30)
+                    await asyncio.sleep(10)
                     xux=await message.reply_photo(
                         photo=("https://telegra.ph/file/f7738f04ea74e16c9db02.jpg"),
                         caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
-                    await asyncio.sleep(30)
+                    await asyncio.sleep(10)
                     await fuk.delete()
                     await xux.delete()
                     await message.delete()
