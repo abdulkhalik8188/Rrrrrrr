@@ -2076,6 +2076,11 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(600)
                         await fek.delete()
+                        thega=await message.reply_photo(
+                            photo=random.choice(CLOSE_IMG),
+                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
+                        await asyncio.sleep(30)                   
+                        await thega.delete()
                         await message.delete()
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
@@ -2084,7 +2089,12 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(600)
                         await fek.delete()
-                        await message.delete()
+                        thega=await message.reply_photo(
+                            photo=random.choice(CLOSE_IMG),
+                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
+                        await asyncio.sleep(30)                   
+                        await thega.delete()
+                        await message.delete()                      
     else:
         if message.chat.id == SUPPORT_CHAT_ID:
             await message.reply_text(
@@ -2101,11 +2111,12 @@ async def auto_filter(client, msg, spoll=False):
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
                     await fuk.delete()
-                    xux=await message.reply_photo(
-                        photo=("https://telegra.ph/file/f7738f04ea74e16c9db02.jpg"),
+                    thega=await message.reply_photo(
+                        photo=random.choice(CLOSE_IMG),
                         caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
-                    await asyncio.sleep(30)                    
-                    await xux.delete()
+                    await asyncio.sleep(30)                   
+                    await thega.delete()
+                    await message.delete()
                     
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
@@ -2114,11 +2125,11 @@ async def auto_filter(client, msg, spoll=False):
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
                     await fuk.delete()
-                    xux=await message.reply_photo(
-                        photo=("https://telegra.ph/file/f7738f04ea74e16c9db02.jpg"),
+                    thega=await message.reply_photo(
+                        photo=random.choice(CLOSE_IMG),
                         caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                     await asyncio.sleep(30)                   
-                    await xux.delete()
+                    await thega.delete()
                     await message.delete()
                     
                     
