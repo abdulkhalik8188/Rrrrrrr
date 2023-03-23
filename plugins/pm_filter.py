@@ -2021,17 +2021,27 @@ async def auto_filter(client, msg, spoll=False):
                 hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
+                        await asyncio.sleep(IMDB_DLT_TIME)
                         await hehe.delete()
-                        await message.delete()
+                        thega = await message.reply_photo(
+                            photo = random.choice(CLOSE_IMG),
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                        await asyncio.sleep(60)                   
+                        await thega.delete()
+                        await message.delete()  
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
+                        await asyncio.sleep(IMDB_DLT_TIME)
                         await hehe.delete()
-                        await message.delete()
+                        thega = await message.reply_photo(
+                            photo = random.choice(CLOSE_IMG),
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                        await asyncio.sleep(60)                   
+                        await thega.delete()
+                        await message.delete()  
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(
@@ -2048,17 +2058,27 @@ async def auto_filter(client, msg, spoll=False):
                 hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
+                        await asyncio.sleep(IMDB_DLT_TIME)
                         await hmm.delete()
-                        await message.delete()
+                        thega = await message.reply_photo(
+                            photo = random.choice(CLOSE_IMG),
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                        await asyncio.sleep(60)                   
+                        await thega.delete()
+                        await message.delete()  
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
+                        await asyncio.sleep(IMDB_DLT_TIME)
                         await hmm.delete()
-                        await message.delete()
+                        thega = await message.reply_photo(
+                            photo = random.choice(CLOSE_IMG),
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                        await asyncio.sleep(60)                   
+                        await thega.delete()
+                        await message.delete()                         
         except Exception as e:
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(
@@ -2074,27 +2094,27 @@ async def auto_filter(client, msg, spoll=False):
                 fek = await message.reply_photo(photo=random.choice(NOR_IMG), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
+                        await asyncio.sleep(IMDB_DLT_TIME)
                         await fek.delete()
-                        thega=await message.reply_photo(
-                            photo=random.choice(CLOSE_IMG),
-                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
-                        await asyncio.sleep(30)                   
+                        thega = await message.reply_photo(
+                            photo = random.choice(CLOSE_IMG),
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                        await asyncio.sleep(60)                   
                         await thega.delete()
-                        await message.delete()
+                        await message.delete()  
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
-                        await asyncio.sleep(600)
+                        await asyncio.sleep(IMDB_DLT_TIME)
                         await fek.delete()
-                        thega=await message.reply_photo(
-                            photo=random.choice(CLOSE_IMG),
-                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
-                        await asyncio.sleep(30)                   
+                        thega = await message.reply_photo(
+                            photo = random.choice(CLOSE_IMG),
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                        await asyncio.sleep(60)                   
                         await thega.delete()
-                        await message.delete()                      
+                        await message.delete()                 
     else:
         if message.chat.id == SUPPORT_CHAT_ID:
             await message.reply_text(
@@ -2109,12 +2129,12 @@ async def auto_filter(client, msg, spoll=False):
             fuk = await message.reply_photo(photo=random.choice(NOR_IMG), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
-                    await asyncio.sleep(60)
+                    await asyncio.sleep(IMDB_DLT_TIME)
                     await fuk.delete()
-                    thega=await message.reply_photo(
-                        photo=random.choice(CLOSE_IMG),
-                        caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
-                    await asyncio.sleep(30)                   
+                    thega = await message.reply_photo(
+                        photo = random.choice(CLOSE_IMG),
+                        caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                    await asyncio.sleep(60)                   
                     await thega.delete()
                     await message.delete()
                     
@@ -2123,12 +2143,12 @@ async def auto_filter(client, msg, spoll=False):
                 await save_group_settings(grpid, 'auto_delete', True)
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
-                    await asyncio.sleep(60)
+                    await asyncio.sleep(IMDB_DLT_TIME)
                     await fuk.delete()
-                    thega=await message.reply_photo(
-                        photo=random.choice(CLOSE_IMG),
-                        caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
-                    await asyncio.sleep(30)                   
+                    thega = await message.reply_photo(
+                        photo = random.choice(CLOSE_IMG),
+                        caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                    await asyncio.sleep(60)                   
                     await thega.delete()
                     await message.delete()
                     
