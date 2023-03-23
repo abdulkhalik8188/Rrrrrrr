@@ -1939,7 +1939,7 @@ async def auto_filter(client, msg, spoll=False):
     ])
     await message.delete()
     m=await message.reply_text("🔍") 
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
     await m.delete()
    
 
@@ -2152,7 +2152,7 @@ async def auto_filter(client, msg, spoll=False):
         await msg.message.delete()
 
 
-async def advantage_spell_chok(client, msg, message):
+async def advantage_spell_chok(client, message, msg):
     mv_id = msg.id
     mv_rqst = msg.text
     reqstr1 = msg.from_user.id if msg.from_user else 0
