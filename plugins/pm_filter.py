@@ -2023,9 +2023,9 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(IMDB_DLT_TIME)
                         await hehe.delete()
-                        thega = await message.reply_photo(
-                            photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
+                        thega=await message.reply_photo(
+                            photo=random.choice(CLOSE_IMG),
+                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()  
