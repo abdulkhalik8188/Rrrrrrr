@@ -431,3 +431,6 @@ coммand and υѕeѕ
 • ᴜꜱᴇʀɴᴀᴍᴇ : @af_x_su
 • ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='https://t.me/crazyspiderr'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
 """
+    CLOSE_TXT = """
+<b>⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️</b>"""
+    
