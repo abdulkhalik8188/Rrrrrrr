@@ -118,7 +118,7 @@ LANGUAGES = ["malayalam", "tamil", "english", "hindi", "telugu", "kannada"]
 
 # Delete Time
 DELETE_TIME = int(environ.get('DELETE_TIME', 300))
-IMDB_DLT_TIME = int(environ.get('IMDB_DLT_TIME', 10))
+IMDB_DLT_TIME = int(environ.get('IMDB_DLT_TIME', 300))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
