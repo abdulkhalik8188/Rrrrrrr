@@ -2025,7 +2025,7 @@ async def auto_filter(client, msg, spoll=False):
                         await hehe.delete()
                         thega = await message.reply_photo(
                             photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()  
@@ -2038,7 +2038,7 @@ async def auto_filter(client, msg, spoll=False):
                         await hehe.delete()
                         thega = await message.reply_photo(
                             photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()  
@@ -2062,7 +2062,7 @@ async def auto_filter(client, msg, spoll=False):
                         await hmm.delete()
                         thega = await message.reply_photo(
                             photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()  
@@ -2075,7 +2075,7 @@ async def auto_filter(client, msg, spoll=False):
                         await hmm.delete()
                         thega = await message.reply_photo(
                             photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()                         
@@ -2098,7 +2098,7 @@ async def auto_filter(client, msg, spoll=False):
                         await fek.delete()
                         thega = await message.reply_photo(
                             photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search),
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()  
@@ -2111,7 +2111,7 @@ async def auto_filter(client, msg, spoll=False):
                         await fek.delete()
                         thega = await message.reply_photo(
                             photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()                 
@@ -2133,7 +2133,7 @@ async def auto_filter(client, msg, spoll=False):
                     await fuk.delete()
                     thega = await message.reply_photo(
                         photo = random.choice(CLOSE_IMG),
-                        caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                        caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
                     await asyncio.sleep(60)                   
                     await thega.delete()
                     await message.delete()
@@ -2147,7 +2147,7 @@ async def auto_filter(client, msg, spoll=False):
                     await fuk.delete()
                     thega = await message.reply_photo(
                         photo = random.choice(CLOSE_IMG),
-                        caption = script.CLOSE_TXT.format(message.from_user.mention, search) 
+                        caption = script.CLOSE_TXT.format(message.from_user.mention, search),
                     await asyncio.sleep(60)                   
                     await thega.delete()
                     await message.delete()
