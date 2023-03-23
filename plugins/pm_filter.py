@@ -2036,12 +2036,12 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(IMDB_DLT_TIME)
                         await hehe.delete()
-                        thega = await message.reply_photo(
-                            photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
+                        thega=await message.reply_photo(
+                            photo=random.choice(CLOSE_IMG),
+                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                         await asyncio.sleep(60)                   
                         await thega.delete()
-                        await message.delete()  
+                        await message.delete()   
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(
@@ -2060,12 +2060,12 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(IMDB_DLT_TIME)
                         await hmm.delete()
-                        thega = await message.reply_photo(
-                            photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
+                        thega=await message.reply_photo(
+                            photo=random.choice(CLOSE_IMG),
+                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                         await asyncio.sleep(60)                   
                         await thega.delete()
-                        await message.delete()  
+                        await message.delete()   
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
@@ -2073,9 +2073,9 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(IMDB_DLT_TIME)
                         await hmm.delete()
-                        thega = await message.reply_photo(
-                            photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
+                        thega=await message.reply_photo(
+                            photo=random.choice(CLOSE_IMG),
+                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()                         
@@ -2096,9 +2096,9 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(IMDB_DLT_TIME)
                         await fek.delete()
-                        thega = await message.reply_photo(
-                            photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search),
+                        thega=await message.reply_photo(
+                            photo=random.choice(CLOSE_IMG),
+                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()  
@@ -2109,9 +2109,9 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(IMDB_DLT_TIME)
                         await fek.delete()
-                        thega = await message.reply_photo(
-                            photo = random.choice(CLOSE_IMG),
-                            caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
+                        thega=await message.reply_photo(
+                            photo=random.choice(CLOSE_IMG),
+                            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                         await asyncio.sleep(60)                   
                         await thega.delete()
                         await message.delete()                 
@@ -2131,12 +2131,12 @@ async def auto_filter(client, msg, spoll=False):
                 if settings['auto_delete']:
                     await asyncio.sleep(IMDB_DLT_TIME)
                     await fuk.delete()
-                    thega = await message.reply_photo(
-                        photo = random.choice(CLOSE_IMG),
-                        caption = script.CLOSE_TXT.format(message.from_user.mention, search), 
+                    thega=await message.reply_photo(
+                        photo=random.choice(CLOSE_IMG),
+                        caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                     await asyncio.sleep(60)                   
                     await thega.delete()
-                    await message.delete()
+                    await message.delete()  
                     
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
@@ -2145,13 +2145,12 @@ async def auto_filter(client, msg, spoll=False):
                 if settings['auto_delete']:
                     await asyncio.sleep(IMDB_DLT_TIME)
                     await fuk.delete()
-                    thega = await message.reply_photo(
-                        photo = random.choice(CLOSE_IMG),
-                        caption = script.CLOSE_TXT.format(message.from_user.mention, search),
+                    thega=await message.reply_photo(
+                        photo=random.choice(CLOSE_IMG),
+                        caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                     await asyncio.sleep(60)                   
                     await thega.delete()
-                    await message.delete()
-                    
+                    await message.delete() 
                     
     if spoll:
         await msg.message.delete()
