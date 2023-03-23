@@ -2100,19 +2100,27 @@ async def auto_filter(client, msg, spoll=False):
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(600)
+                    xux=await message.reply_photo(
+                        photo=("https://telegra.ph/file/f7738f04ea74e16c9db02.jpg"),
+                        caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
+                    await asyncio.sleep(30)
                     await fuk.delete()
-                    await message.delete()
+                    await xux.delete()
+                    
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
                 await save_group_settings(grpid, 'auto_delete', True)
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
                     await asyncio.sleep(30)
-                    await fuk.delete()
-                    await message.delete()
-                    await message.reply_photo(
+                    xux=await message.reply_photo(
                         photo=("https://telegra.ph/file/f7738f04ea74e16c9db02.jpg"),
                         caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
+                    await asyncio.sleep(30)
+                    await fuk.delete()
+                    await xux.delete()
+                    await message.delete()
+                    
                     
     if spoll:
         await msg.message.delete()
