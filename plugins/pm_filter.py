@@ -2152,7 +2152,7 @@ async def auto_filter(client, msg, spoll=False):
         await msg.message.delete()
 
 
-async def advantage_spell_chok(client, msg):
+async def advantage_spell_chok(client, msg, message):
     mv_id = msg.id
     mv_rqst = msg.text
     reqstr1 = msg.from_user.id if msg.from_user else 0
@@ -2178,7 +2178,7 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await msg.message.delete()
+        await message.delete()
         await asyncio.sleep(30)
         await k.delete()  
         return
@@ -2195,7 +2195,7 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await msg.message.delete()
+        await message.delete()
         await asyncio.sleep(30)
         await k.delete()          
         return
