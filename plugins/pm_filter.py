@@ -2111,7 +2111,7 @@ async def auto_filter(client, msg, spoll=False):
                     await fuk.delete()
                     await message.delete()
                     await message.reply_photo(
-                        photo=("https://telegra.ph/file/f7738f04ea74e16c9db02.jpg")
+                        photo=("https://telegra.ph/file/f7738f04ea74e16c9db02.jpg"),
                         caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                     
     if spoll:
