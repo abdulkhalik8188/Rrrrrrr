@@ -724,15 +724,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         title = files.file_name
         size = get_size(files.file_size)
         f_caption = files.caption
-        #uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - BOT_START_TIME))
-       # x = datetime.datetime.now()
-       # time = x.strftime("%H")
-       # if time < "12":
-       #     get="Good Morning"
-     #   elif time < "15": 
-      #     get="Good After Noon"
-      #  else:
-     #       get="Good Even"
         settings = await get_settings(query.message.chat.id)
         if CUSTOM_FILE_CAPTION:
             try:
@@ -746,7 +737,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
 
         try:
-            if (AUTH_CHANNEL or REQ_CHANNEL) and not await is_subscribed(client, query):
+            if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             elif settings['botpm']:
@@ -756,19 +747,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 mh = await client.send_cached_media(
                     chat_id=FILE_CHANNEL,
                     file_id=file_id,
-                    caption=script.FILE_CHANNEL_TXT.format(query.from_user.mention, title, size),
+                    caption=script.FILE_CHANNEL_TXT.format(title, size, query.from_user.mention, query.message.chat.title, temp.U_NAME),
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
-                        [[ 
-                          InlineKeyboardButton('🇮🇳 ᴍᴀʟ', callback_data='malayalam'),
-                          InlineKeyboardButton('🇮🇳 ʜɪɴ', callback_data='hindi'),
-                          InlineKeyboardButton('🇮🇳 ᴛᴀᴍ', callback_data='tamil')
-                        ],[                         
-                          InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ ❆", url='t.me/CKTalkies')
+                        [[
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                         ]]
                     )
                 )
-                mh8 = await query.message.reply(script.FILE_READY_TXT.format(query.from_user.mention, get, title, size),
+                mh8 = await query.message.reply(script.FILE_READY_TXT.format(query.from_user.mention, title, size),
                 True,
                 enums.ParseMode.HTML,
                 disable_web_page_preview=True,
@@ -776,11 +764,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton("📥  ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ  📥", url=f"{mh.link}")
+                        ],
+                        [
+                            InlineKeyboardButton("⚠️ ᴄᴀɴ'ᴛ ᴀᴄᴄᴇss ❓ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ⚠️", url=("https://tme/TGxMULTIBOTDB")
                         ]
                     ]
                 )
-            )                    
-            await asyncio.sleep(DELETE_TIME)
+            )
+            await asyncio.sleep(300)
             await mh8.delete()
             await mh.delete()
             del mh8, mh
