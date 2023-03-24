@@ -11,7 +11,7 @@ CMD = ["/", "."]
 async def check_alive(_, message):
     myrr = await message.reply_sticker("CAACAgIAAxkBAAEIK1lkFAN0BjHbiwRY08v-7EFYRqI2fQACKRgAAhP_2UkVxgiD_rlLGS8E")
     andi = await message.reply_text("ʜᴇʏ ʙᴜᴅᴅʏ ɪ ᴀᴍ ᴀʟɪᴠᴇ 💃\n\nᴄʟɪᴄᴋ /start ꜰᴏʀ ᴍᴏʀᴇ​ 😻")
-    await asyncio.sleep(6)
+    await asyncio.sleep(200)
     await myrr.delete()
     await andi.delete()
     await message.delete()
