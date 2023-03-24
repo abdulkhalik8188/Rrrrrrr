@@ -766,8 +766,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton("📥  ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ  📥", url=f"{mh.link}")
                         ],
                         [
-                            InlineKeyboardButton("⚠️ ᴄᴀɴ'ᴛ ᴀᴄᴄᴇss ❓ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ⚠️", url=("https://tme/TGxMULTIBOTDB")
+                            InlineKeyboardButton("⚠️ ᴄᴀɴ'ᴛ ᴀᴄᴄᴇss ❓ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ⚠️", url="https://t.me/TGxMULTIBOTDB")
+                        ]
                     ]
+                )
             )
             await asyncio.sleep(300)
             await mh8.delete()
