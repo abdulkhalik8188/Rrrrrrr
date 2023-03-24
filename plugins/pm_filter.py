@@ -1937,7 +1937,7 @@ async def auto_filter(client, msg, spoll=False):
     btn.insert(0, [
         InlineKeyboardButton(f'🔍 {search} 🔎', 'reqst1')
     ])
-    await message.delete()
+   # await message.delete()
     m=await message.reply_text("🔍") 
     await asyncio.sleep(1)
     await m.delete()
@@ -2178,7 +2178,6 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await msg.delete()
         await asyncio.sleep(30)
         await k.delete()  
         return
@@ -2195,7 +2194,6 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await msg.delete()
         await asyncio.sleep(30)
         await k.delete()          
         return
