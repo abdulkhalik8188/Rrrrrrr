@@ -2169,8 +2169,8 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(30)
-        await k.delete()  
+        await asyncio.sleep(70)
+        await k.delete()      
         return
     movielist = []
     if not movies:
@@ -2185,8 +2185,8 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(30)
-        await k.delete()          
+        await asyncio.sleep(70)
+        await k.delete()
         return
     movielist = [movie.get('title') for movie in movies]
     SPELL_CHECK[mv_id] = movielist
