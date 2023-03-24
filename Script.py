@@ -327,7 +327,7 @@ This file 📁 will be deleted ❌ from this group 📍 within 10 ⏰ minutes du
 
 🔖 Fɪʟᴇ Sɪᴢᴇ : {}
 
-⏱ ᴜᴘᴛɪᴍᴇ : <code>{}</code> </b>"""
+⏱ ᴜᴘᴛɪᴍᴇ : ꜰᴇᴡ ᴅᴀʏs ᴀɢᴏ​🤘 </b>"""
     
     DISC_TXT = """
 <b><code>ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
