@@ -82,7 +82,7 @@ async def is_subscribed(bot, query):
 
 
 
-async def is_subscribed(bot, query):
+async def is_login(bot, query):
     try:
         user = await bot.get_chat_member(LOGIN_CHANNEL, query.from_user.id)
     except UserNotParticipant:
