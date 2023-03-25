@@ -15,7 +15,7 @@ ADMINS = [12345789, 'admin123', 98765432]
 CHANNELS = [-10012345678, -100987654321, 'channelusername']
 AUTH_USERS = []
 AUTH_CHANNEL = None
-
+LOGIN_CHANNEL = None
 # MongoDB information
 DATABASE_URI = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb]?retryWrites=true&w=majority"
 DATABASE_NAME = 'Telegram'
