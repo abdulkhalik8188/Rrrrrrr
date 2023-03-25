@@ -1219,9 +1219,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "delf":
         await query.answer(text=script.DELF, show_alert=True)
         
-    elif query.data == "help":
-        await query.answer(text=script.HELP_TXT, show_alert=True)
-     
     elif query.data == "malayalam":
         await query.answer(text=script.MALAYALAM_TXT, show_alert=True)
 
