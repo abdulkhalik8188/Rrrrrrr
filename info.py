@@ -1,10 +1,24 @@
 import re
-from os import environ
+from os import environ, getcwd
 from Script import script
 from dotenv import load_dotenv
 load_dotenv()
 from time import time
+import asyncio
+import json
+from collections import defaultdict
+from typing import Dict, List, Union
+from pyrogram import Client
+from prettyconf import Configuration
+from logging import WARNING, getLogger
+from prettyconf.loaders import EnvFile, Environment
 
+
+env_file = f"{getcwd()}/.env"
+info = Configuration(loaders=[Environment(), EnvFile(filename=env_file)])
+
+getLogger("pyrogram").setLevel(WARNING)
+LOGGER = getLogger(__name__)
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -14,6 +28,27 @@ def is_enabled(value, default):
         return False
     else:
         return default
+
+class evamaria(Client):
+    filterstore: Dict[str, Dict[str, str]] = defaultdict(dict)
+    warndatastore: Dict[
+        str, Dict[str, Union[str, int, List[str]]]
+    ] = defaultdict(dict)
+    warnsettingsstore: Dict[str, str] = defaultdict(dict)
+
+    def __init__(self):
+        name = self.__class__.__name__.lower()
+        super().__init__(
+            ":memory:",
+            plugins=dict(root=f"{name}/plugins"),
+            workdir=TMP_DOWNLOAD_DIRECTORY,
+            api_id=APP_ID,
+            api_hash=API_HASH,
+            bot_token=BOT_TOKEN,
+            parse_mode="html",
+            sleep_threshold=60
+        )
+
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
@@ -32,6 +67,30 @@ NOR_IMG = (environ.get('NOR_IMG', 'https://telegra.ph/file/8ab607a0ae37243d3e5eb
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/732a9f89be5a9cd63289b.jpg")
 CLOSE_IMG = (environ.get('CLOSE_IMG', 'https://telegra.ph/file/6e9dd701bac49632cf79a.jpg https://telegra.ph/file/998d2b84e1411ed5189e3.jpg https://telegra.ph/file/c199babd469011d07f139.jpg https://telegra.ph/file/31b6d3d2c70bbe52b5300.jpg https://telegra.ph/file/77744524fbb6305298d45.jpg https://telegra.ph/file/9d79d990674166a2a2364.jpg')).split()
 
+
+# maximum message length in Telegram
+MAX_MESSAGE_LENGTH = 4096
+
+# This is required for the plugins involving the file system.
+TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
+
+# the maximum number of 'selectable' messages in Telegram
+TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
+
+# Command
+COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
+
+#CommandsOfGroup
+ENABLED_LOCALES = environ.get("ENABLED_LOCALES", "en")
+BOT_USERNAME = environ.get("BOT_USERNAME", "@TGxMULTIBOT")
+OWNER_ID = environ.get("OWNER_ID", "5977113116")
+DEV_USERS = environ.get("DEV_USERS", "1878262345")
+SUDO_USERS = environ.get("SUDO_USERS", "1878262345")
+BOT_ID = environ.get("BOT_ID", "6082622299")
+SUPPORT_STAFF = environ.get("SUPPORT_STAFF", "1957296068")
+SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "MLZ_BOTZ_SUPPORT")
+ENABLED_LOCALES = [str(i) for i in info("ENABLED_LOCALES", default="en").split()]
+
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
@@ -49,8 +108,8 @@ FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001616308548'))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/TGxMULTIBOTDB')
 
 #VALUES
-HRK_APP_NAME = environ.get('HRK_APP_NAME', 'mybots')
-HRK_API = environ.get('HRK_API', '0')
+HRK_APP_NAME = environ.get('HRK_APP_NAME', 'moviesprobot')
+HRK_API = environ.get('HRK_API', 'b51d91a5-ffd2-4180-a11f-d90109402b5f')
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
